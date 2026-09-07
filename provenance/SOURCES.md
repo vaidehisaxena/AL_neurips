@@ -32,3 +32,6 @@ The upstream Git history was imported before AgenticAL changes. The first local 
 
 The large archive was retrieved through byte-range requests after the single-connection Zenodo endpoint slowed severely. The ranges were assembled to a separate file; the incomplete initial transfer was replaced only after byte count and MD5 matched the Zenodo metadata. Temporary range files were then deleted.
 
+### Initial schema audit
+
+The four target CSVs contain 2,502 D2R, 2,749 Mpro, 9,997 TYK2, and 1,799 USP7 data rows. All have nonempty, unique SMILES and finite parseable affinities, and their target columns are internally consistent. `TYK2_sorted.csv` has three additional blank header fields caused by trailing delimiters; those fields are empty in every row. This should be normalized explicitly in the future data-loading layer, not by modifying the raw artifact.
