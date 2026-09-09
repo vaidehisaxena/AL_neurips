@@ -1,6 +1,6 @@
 # AgenticAL: implementation and experiment plan
 
-Status: **execution plan approved internally; no experiments may run until the readiness gate in Phase 5 passes.**
+Status: **data acquisition, readiness checks, and the fixed-policy benchmark are complete. Paid agent experiments remain behind the cost/API-key gate in Phase 5.**
 
 ## 1. Objective and core hypothesis
 
@@ -179,4 +179,3 @@ Stop execution and notify the user if:
 - `results/`: tidy aggregate tables and statistical summaries.
 - `figures/`: architecture, discovery curves, target-specific policy heatmaps, ablations.
 - `docs/`: experimental protocol, prompt/model card, limitations, and reproduction guide.
-

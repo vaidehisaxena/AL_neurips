@@ -30,10 +30,10 @@ class TanimotoKernel(gpytorch.kernels.Kernel):
 class GPRegressionModel(gpytorch.models.ExactGP):
     """GP regression model using the package's `TanimotoKernel` by default."""
 
-    def __init__(self, train_x, train_y, likelihood):
+    def __init__(self, train_x, train_y, likelihood, kernel=None):
         super(GPRegressionModel, self).__init__(train_x, train_y, likelihood)
         self.mean_module = gpytorch.means.ConstantMean()
-        self.covar_module = TanimotoKernel()
+        self.covar_module = kernel if kernel is not None else TanimotoKernel()
 
     def forward(self, x):
         mean_x = self.mean_module(x)
@@ -47,7 +47,12 @@ def train_gp_model(train_x, train_y, likelihood, model, epochs=50, lr=0.1, lr_de
 
     See `train_gp_model.py` for details.
     """
-    return _train_gp_model_impl(train_x, train_y, likelihood, model, epochs=epochs, lr=lr, lr_decay=lr_decay)
+    trained_model, trained_likelihood, _ = _train_gp_model_impl(
+        train_x, train_y, likelihood, model, epochs=epochs, lr=lr, lr_decay=lr_decay
+    )
+    trained_model.eval()
+    trained_likelihood.eval()
+    return trained_model, trained_likelihood
 
 
 def ucb_selection(fingerprints, model, likelihood, batch_size, alpha, beta, already_selected_indices):

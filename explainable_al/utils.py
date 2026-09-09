@@ -23,22 +23,18 @@ def active_learning(*args, **kwargs):
 
 def get_ecfp_fingerprints(smiles_list_or_df):
     """Return ECFP fingerprints for a list of SMILES or a DataFrame with 'SMILES' column."""
-    from .featuriser import get_maccs_from_smiles_list, smiles_to_ecfp8_df
-
-    # Accept either list of SMILES or DataFrame
     if isinstance(smiles_list_or_df, (list, tuple)):
-        # convert list into minimal DataFrame for re-use
-        import pandas as _pd
-
-        df = _pd.DataFrame({"SMILES": list(smiles_list_or_df)})
-        return smiles_to_ecfp8_df(df, "SMILES")
-    else:
-        return smiles_to_ecfp8_df(smiles_list_or_df, "SMILES")
+        return [
+            AllChem.GetMorganFingerprintAsBitVect(Chem.MolFromSmiles(smiles), 4, nBits=4096)
+            for smiles in smiles_list_or_df
+        ]
+    from .featuriser import smiles_to_ecfp8_df
+    return smiles_to_ecfp8_df(smiles_list_or_df, "SMILES")
 
 
 def get_maccs_keys(smiles_list):
-    from .featuriser import get_maccs_from_smiles_list
-    return get_maccs_from_smiles_list(smiles_list)
+    from rdkit.Chem import MACCSkeys
+    return [MACCSkeys.GenMACCSKeys(Chem.MolFromSmiles(smiles)) for smiles in smiles_list]
 
 
 def get_chemberta_embeddings(npz_file):
