@@ -1,0 +1,17 @@
+{
+  "protocol": "codex-agent-v1",
+  "controller_model": "gpt-5.6-sol",
+  "targets": ["D2R", "Mpro", "TYK2", "USP7"],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "initial_size": 60,
+  "cycles": 10,
+  "batch_size": 30,
+  "total_measured": 360,
+  "action": ["n_exploit", "n_uncertain", "n_diverse"],
+  "action_constraint": "nonnegative integers summing to 30",
+  "agent_view": "observed affinity summaries, GP mean/std quantiles, scaffold counts, remaining budget, and revealed campaign history only",
+  "candidate_resolution": "deterministic queue ranking, overlap removal, and index tie-breaking",
+  "api_calls": 0,
+  "comparison": "paired target/seed endpoints against the frozen fixed-policy baseline matrix"
+}
+

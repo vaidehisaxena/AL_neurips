@@ -4,7 +4,7 @@ Date: 2026-09-09
 
 ## Outcome
 
-The data, repository, deterministic campaign engine, fixed-policy benchmark, statistical analysis, and agent dry-run are complete. The only blocked execution phase is the paid LLM development/full benchmark: this shell has no `OPENAI_API_KEY`, and the frozen plan requires a cost-gate review before paid calls.
+The data, repository, deterministic campaign engine, fixed-policy benchmark, statistical analysis, and agent dry-run are complete. A no-API alternative using GPT-5.6 Sol Codex subagents also completed 40 campaigns and is reported separately in `docs/CODEX_AGENT_RESULTS.md`. The originally planned paid Responses API benchmark remains optional because this shell has no `OPENAI_API_KEY`.
 
 ## Completed checks
 
@@ -52,4 +52,3 @@ The estimate uses the official GPT-5.4 rates checked on 2026-09-09: $2.50/millio
 5. Aggregate agent-vs-baseline statistics and faithfulness ablations.
 
 No paid calls were made while producing this report.
-
