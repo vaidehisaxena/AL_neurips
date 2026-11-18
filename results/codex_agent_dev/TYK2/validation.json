@@ -1,0 +1,376 @@
+{
+  "status": "PASS",
+  "target": "TYK2",
+  "model": "gpt-5.6-sol",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "valid_actions": 100,
+  "invalid_actions": 0,
+  "issues": [],
+  "endpoint_summary": {
+    "best_affinity": {
+      "mean": 12.1914429,
+      "sd": 0.0
+    },
+    "simple_regret": {
+      "mean": 0.0,
+      "sd": 0.0
+    },
+    "top_1p_recall": {
+      "mean": 0.588,
+      "sd": 0.06268084945889682
+    },
+    "top_2p_recall": {
+      "mean": 0.44750000000000006,
+      "sd": 0.046263136272606704
+    },
+    "top_5p_recall": {
+      "mean": 0.2844000000000001,
+      "sd": 0.031408420668490936
+    },
+    "unique_top_5p_scaffolds": {
+      "mean": 21.4,
+      "sd": 1.5055453054181622
+    },
+    "experiments_to_first_top_1p_hit": {
+      "mean": 78.0,
+      "sd": 15.491933384829668
+    },
+    "aulc_top_2p_recall": {
+      "mean": 0.220375,
+      "sd": 0.025332031216536023
+    }
+  },
+  "per_seed": {
+    "0": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.55,
+        "top_2p_recall": 0.425,
+        "top_5p_recall": 0.28,
+        "unique_top_5p_scaffolds": 22,
+        "experiments_to_first_top_1p_hit": 90,
+        "aulc_top_2p_recall": 0.21000000000000002
+      }
+    },
+    "1": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.63,
+        "top_2p_recall": 0.455,
+        "top_5p_recall": 0.302,
+        "unique_top_5p_scaffolds": 22,
+        "experiments_to_first_top_1p_hit": 90,
+        "aulc_top_2p_recall": 0.23674999999999996
+      }
+    },
+    "2": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.7,
+        "top_2p_recall": 0.52,
+        "top_5p_recall": 0.318,
+        "unique_top_5p_scaffolds": 23,
+        "experiments_to_first_top_1p_hit": 60,
+        "aulc_top_2p_recall": 0.26075000000000004
+      }
+    },
+    "3": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.62,
+        "top_2p_recall": 0.465,
+        "top_5p_recall": 0.278,
+        "unique_top_5p_scaffolds": 20,
+        "experiments_to_first_top_1p_hit": 60,
+        "aulc_top_2p_recall": 0.225
+      }
+    },
+    "4": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.66,
+        "top_2p_recall": 0.475,
+        "top_5p_recall": 0.314,
+        "unique_top_5p_scaffolds": 20,
+        "experiments_to_first_top_1p_hit": 90,
+        "aulc_top_2p_recall": 0.23225000000000004
+      }
+    },
+    "5": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.59,
+        "top_2p_recall": 0.46,
+        "top_5p_recall": 0.296,
+        "unique_top_5p_scaffolds": 22,
+        "experiments_to_first_top_1p_hit": 60,
+        "aulc_top_2p_recall": 0.22599999999999998
+      }
+    },
+    "6": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.56,
+        "top_2p_recall": 0.47,
+        "top_5p_recall": 0.304,
+        "unique_top_5p_scaffolds": 24,
+        "experiments_to_first_top_1p_hit": 90,
+        "aulc_top_2p_recall": 0.23875
+      }
+    },
+    "7": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.52,
+        "top_2p_recall": 0.46,
+        "top_5p_recall": 0.292,
+        "unique_top_5p_scaffolds": 21,
+        "experiments_to_first_top_1p_hit": 90,
+        "aulc_top_2p_recall": 0.21049999999999996
+      }
+    },
+    "8": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.52,
+        "top_2p_recall": 0.385,
+        "top_5p_recall": 0.232,
+        "unique_top_5p_scaffolds": 19,
+        "experiments_to_first_top_1p_hit": 90,
+        "aulc_top_2p_recall": 0.19125
+      }
+    },
+    "9": {
+      "checks": {
+        "trajectory_rows_11": true,
+        "decision_rows_10": true,
+        "cycles_complete": true,
+        "measured_schedule": true,
+        "allocations_sum_30": true,
+        "nonnegative_allocations": true,
+        "each_batch_30_unique": true,
+        "selected_300_unique": true,
+        "initial_60_unique": true,
+        "initial_and_selected_disjoint": true,
+        "total_360_unique": true,
+        "state_top_level_allowlist": true,
+        "state_counts_match": true,
+        "metric_ranges": true,
+        "model_metadata_exact": true,
+        "rationales_present": true,
+        "expectations_present": true
+      },
+      "endpoint": {
+        "measured": 360,
+        "best_affinity": 12.1914429,
+        "simple_regret": 0.0,
+        "top_1p_recall": 0.53,
+        "top_2p_recall": 0.36,
+        "top_5p_recall": 0.228,
+        "unique_top_5p_scaffolds": 21,
+        "experiments_to_first_top_1p_hit": 60,
+        "aulc_top_2p_recall": 0.17250000000000001
+      }
+    }
+  }
+}

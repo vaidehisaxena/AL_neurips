@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 72,
+    "pool_unique_scaffolds": 1089
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.993918365013036,
+    "median": 6.021434692766287,
+    "min": 4.204864703037831,
+    "q25": 5.674223979493535,
+    "q75": 6.40953277342012
+  },
+  "gp_predicted_std": {
+    "max": 1.3840778166432444,
+    "median": 1.1955563941288339,
+    "min": 0.08679639856198088,
+    "q25": 1.0752400799797632,
+    "q75": 1.2818509302786842
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "At least one candidate should challenge the incumbent and the exploratory portion should add substantial scaffold coverage.",
+      "improvement": 0.42626205799999894,
+      "n_diverse": 12,
+      "n_exploit": 6,
+      "n_uncertain": 12,
+      "observed_best_after": 10.00343689,
+      "observed_best_before": 9.577174832,
+      "rationale": "The GP maximum is close to the 9.577 incumbent, supporting a modest exploit test, while the large pool and uncertainty make early exploration the majority allocation.",
+      "selected_indices": [
+        49,
+        1043,
+        1205,
+        1920,
+        999,
+        1042,
+        683,
+        6,
+        767,
+        123,
+        380,
+        298,
+        539,
+        764,
+        954,
+        223,
+        611,
+        677,
+        275,
+        2632,
+        674,
+        654,
+        724,
+        164,
+        542,
+        5,
+        364,
+        681,
+        31,
+        80
+      ],
+      "selected_predicted_mean": 6.631312028570084,
+      "selected_predicted_std": 1.0393134079021362
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.00343689,
+    "mean": 6.46512097081111,
+    "quantiles": {
+      "max": 10.00343689,
+      "median": 6.5,
+      "min": 4.2,
+      "q25": 5.5,
+      "q75": 7.0839889432500005
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2659,
+  "remaining_assay_budget": 270,
+  "target": "Mpro",
+  "total_cycles": 10
+}

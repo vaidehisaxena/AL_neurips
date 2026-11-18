@@ -1,0 +1,183 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 94,
+    "pool_unique_scaffolds": 847
+  },
+  "cycle": 3,
+  "explanatory_evidence": {
+    "eligible_bit_count": 953,
+    "evidence_sha256": "bf88b98beadd25d498f24c635e6da5e293c8f01fe8afcfd7dff96ff41e0d85b1",
+    "features": [
+      {
+        "affinity_difference": -3.603915809076922,
+        "bit_index": 1591,
+        "prevalence": 0.025,
+        "rank": 1,
+        "score": 1.9462712705484524,
+        "sign": -1,
+        "standardized_enrichment": -1.9462712705484524,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.389784858307691,
+        "bit_index": 715,
+        "prevalence": 0.025,
+        "rank": 2,
+        "score": 1.8306312446167357,
+        "sign": -1,
+        "standardized_enrichment": -1.8306312446167357,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.3480016518119657,
+        "bit_index": 883,
+        "prevalence": 0.025,
+        "rank": 3,
+        "score": 1.8080664959649484,
+        "sign": -1,
+        "standardized_enrichment": -1.8080664959649484,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.834536332122806,
+        "bit_index": 1607,
+        "prevalence": 0.05,
+        "rank": 4,
+        "score": 1.5307728928188882,
+        "sign": -1,
+        "standardized_enrichment": -1.5307728928188882,
+        "support": 6
+      },
+      {
+        "affinity_difference": -2.7365517696724133,
+        "bit_index": 229,
+        "prevalence": 0.03333333333333333,
+        "rank": 5,
+        "score": 1.4778569677647717,
+        "sign": -1,
+        "standardized_enrichment": -1.4778569677647717,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.6200493721724136,
+        "bit_index": 3766,
+        "prevalence": 0.03333333333333333,
+        "rank": 6,
+        "score": 1.4149406064465693,
+        "sign": -1,
+        "standardized_enrichment": -1.4149406064465693,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.5858174260517224,
+        "bit_index": 2367,
+        "prevalence": 0.03333333333333333,
+        "rank": 7,
+        "score": 1.3964538668002486,
+        "sign": -1,
+        "standardized_enrichment": -1.3964538668002486,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.5304414822393158,
+        "bit_index": 277,
+        "prevalence": 0.025,
+        "rank": 8,
+        "score": 1.3665484488517652,
+        "sign": -1,
+        "standardized_enrichment": -1.3665484488517652,
+        "support": 3
+      },
+      {
+        "affinity_difference": 2.520285574739999,
+        "bit_index": 1380,
+        "prevalence": 0.8333333333333334,
+        "rank": 9,
+        "score": 1.3610638171235534,
+        "sign": 1,
+        "standardized_enrichment": 1.3610638171235534,
+        "support": 100
+      },
+      {
+        "affinity_difference": -2.4996828226034493,
+        "bit_index": 1270,
+        "prevalence": 0.03333333333333333,
+        "rank": 10,
+        "score": 1.3499374349598512,
+        "sign": -1,
+        "standardized_enrichment": -1.3499374349598512,
+        "support": 4
+      }
+    ],
+    "method": "observed-fingerprint-enrichment-v1",
+    "observed_count": 120
+  },
+  "gp_predicted_mean": {
+    "max": 8.27512009292985,
+    "median": 6.712673820202969,
+    "min": 2.543532691579143,
+    "q25": 6.4483348212123115,
+    "q75": 6.939245358609014
+  },
+  "gp_predicted_std": {
+    "max": 1.7974584124159223,
+    "median": 1.722797956457475,
+    "min": 0.13085808449865333,
+    "q25": 1.5469388782677176,
+    "q75": 1.7594914293690866
+  },
+  "history": [
+    {
+      "batch_affinity_max": 8.998699067,
+      "batch_affinity_mean": 6.151994527933332,
+      "cycle": 1,
+      "expected_outcome": "The batch mean affinity will exceed 6.88 and at least 15 selections will add previously unobserved scaffolds.",
+      "improvement": 0.09746339500000012,
+      "incumbent_improved": true,
+      "n_diverse": 10,
+      "n_exploit": 10,
+      "n_uncertain": 10,
+      "observed_best_after": 8.998699067,
+      "observed_best_before": 8.901235672,
+      "rationale": "The initial D2R view has 874 pool scaffolds, median uncertainty 1.452, and predicted-mean maximum 8.383. A near-balanced opening batch probes ranked leads, model uncertainty, and chemical-space coverage before feedback is available.",
+      "selected_new_scaffolds": 20,
+      "selected_predicted_mean": 7.209013936299253,
+      "selected_predicted_std": 1.3563329738257592
+    },
+    {
+      "batch_affinity_max": 9.003767426,
+      "batch_affinity_mean": 6.756495135700001,
+      "cycle": 2,
+      "expected_outcome": "The batch mean affinity will exceed 6.69 and at least 13 selections will add previously unobserved scaffolds.",
+      "improvement": 0.005068358999999134,
+      "incumbent_improved": true,
+      "n_diverse": 8,
+      "n_exploit": 10,
+      "n_uncertain": 12,
+      "observed_best_after": 9.003767426,
+      "observed_best_before": 8.998699067,
+      "rationale": "Cycle 1 returned mean 6.152, maximum 8.999, and 20 new scaffolds; the incumbent improved at 8.999. Because realized mean lagged the selected predicted mean, I shift capacity toward uncertainty for recalibration while retaining 8 diversity slots across 858 remaining pool scaffolds.",
+      "selected_new_scaffolds": 18,
+      "selected_predicted_mean": 7.103922483722377,
+      "selected_predicted_std": 1.5172161829179218
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.003767426,
+    "mean": 6.59201164285,
+    "quantiles": {
+      "max": 9.003767426,
+      "median": 6.9254933095,
+      "min": -1.785400313,
+      "q25": 5.84203383325,
+      "q75": 7.941370679
+    }
+  },
+  "observed_count": 120,
+  "pool_count": 1882,
+  "remaining_assay_budget": 240,
+  "target": "D2R",
+  "total_cycles": 10
+}

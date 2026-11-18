@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 71,
+    "pool_unique_scaffolds": 713
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 8.36523896371711,
+    "median": 7.022659089711334,
+    "min": 4.341392138974069,
+    "q25": 5.954643989424042,
+    "q75": 7.480492056148199
+  },
+  "gp_predicted_std": {
+    "max": 1.3911647217480092,
+    "median": 0.9589380796611399,
+    "min": 0.3789161027480796,
+    "q25": 0.8508520238710523,
+    "q75": 1.1716451242828148
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "Improve the incumbent or recover several high-affinity compounds while adding new scaffolds.",
+      "improvement": 1.0330002599999997,
+      "n_diverse": 8,
+      "n_exploit": 12,
+      "n_uncertain": 10,
+      "observed_best_after": 9.420216403,
+      "observed_best_before": 8.387216143,
+      "rationale": "The initial best is close to the GP maximum, so use a slight exploitation emphasis while preserving substantial uncertainty and scaffold coverage.",
+      "selected_indices": [
+        36,
+        85,
+        62,
+        80,
+        40,
+        184,
+        136,
+        110,
+        135,
+        115,
+        104,
+        46,
+        1414,
+        1413,
+        1510,
+        1254,
+        1199,
+        1295,
+        1247,
+        1770,
+        1297,
+        1430,
+        1515,
+        1406,
+        1797,
+        1478,
+        8,
+        1499,
+        1721,
+        1676
+      ],
+      "selected_predicted_mean": 6.944631399161015,
+      "selected_predicted_std": 0.9868028734108343
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.420216403,
+    "mean": 6.610188536944444,
+    "quantiles": {
+      "max": 9.420216403,
+      "median": 6.924315075,
+      "min": 3.326979093,
+      "q25": 5.38761713325,
+      "q75": 7.6262208422499995
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 1709,
+  "remaining_assay_budget": 270,
+  "target": "USP7",
+  "total_cycles": 10
+}

@@ -1,0 +1,141 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 50,
+    "pool_unique_scaffolds": 729
+  },
+  "cycle": 1,
+  "explanatory_evidence": {
+    "eligible_bit_count": 519,
+    "evidence_sha256": "786dc2ab39137870349ad8db478d97f7b8507646363c4ee9e94e884b8740db2f",
+    "features": [
+      {
+        "affinity_difference": -2.5462374559649117,
+        "bit_index": 983,
+        "prevalence": 0.05,
+        "rank": 1,
+        "score": 2.0714605263722783,
+        "sign": -1,
+        "standardized_enrichment": -2.0714605263722783,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.3768273436842113,
+        "bit_index": 4079,
+        "prevalence": 0.05,
+        "rank": 2,
+        "score": 1.933638989132822,
+        "sign": -1,
+        "standardized_enrichment": -1.933638989132822,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.324349725438597,
+        "bit_index": 634,
+        "prevalence": 0.05,
+        "rank": 3,
+        "score": 1.8909464608066966,
+        "sign": -1,
+        "standardized_enrichment": -1.8909464608066966,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.2655809229824557,
+        "bit_index": 2960,
+        "prevalence": 0.05,
+        "rank": 4,
+        "score": 1.843135816051283,
+        "sign": -1,
+        "standardized_enrichment": -1.843135816051283,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.208369049821429,
+        "bit_index": 231,
+        "prevalence": 0.06666666666666667,
+        "rank": 5,
+        "score": 1.7965917921955135,
+        "sign": -1,
+        "standardized_enrichment": -1.7965917921955135,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.208369049821429,
+        "bit_index": 1313,
+        "prevalence": 0.06666666666666667,
+        "rank": 6,
+        "score": 1.7965917921955135,
+        "sign": -1,
+        "standardized_enrichment": -1.7965917921955135,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.208369049821429,
+        "bit_index": 1917,
+        "prevalence": 0.9333333333333333,
+        "rank": 7,
+        "score": 1.7965917921955135,
+        "sign": 1,
+        "standardized_enrichment": 1.7965917921955135,
+        "support": 56
+      },
+      {
+        "affinity_difference": -2.208369049821429,
+        "bit_index": 2804,
+        "prevalence": 0.06666666666666667,
+        "rank": 8,
+        "score": 1.7965917921955135,
+        "sign": -1,
+        "standardized_enrichment": -1.7965917921955135,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.208369049821429,
+        "bit_index": 2855,
+        "prevalence": 0.9333333333333333,
+        "rank": 9,
+        "score": 1.7965917921955135,
+        "sign": 1,
+        "standardized_enrichment": 1.7965917921955135,
+        "support": 56
+      },
+      {
+        "affinity_difference": -2.208369049821429,
+        "bit_index": 3826,
+        "prevalence": 0.06666666666666667,
+        "rank": 10,
+        "score": 1.7965917921955135,
+        "sign": -1,
+        "standardized_enrichment": -1.7965917921955135,
+        "support": 4
+      }
+    ],
+    "method": "observed-fingerprint-enrichment-v1",
+    "observed_count": 60
+  },
+  "gp_predicted_mean": {
+    "max": 8.292947605763683,
+    "median": 7.04881786035811,
+    "min": 4.376147524944359,
+    "q25": 6.072191191916238,
+    "q75": 7.449086254727041
+  },
+  "history": [],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 8.387216143,
+    "mean": 6.6115808965000005,
+    "quantiles": {
+      "max": 8.387216143,
+      "median": 7.039587947499999,
+      "min": 3.896196279,
+      "q25": 5.886288785,
+      "q75": 7.501857202749999
+    }
+  },
+  "observed_count": 60,
+  "pool_count": 1739,
+  "remaining_assay_budget": 300,
+  "target": "USP7",
+  "total_cycles": 10
+}

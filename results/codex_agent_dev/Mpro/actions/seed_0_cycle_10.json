@@ -1,0 +1,7 @@
+{
+  "n_exploit": 10,
+  "n_uncertain": 10,
+  "n_diverse": 10,
+  "rationale": "The exploration-heavy ninth cycle broke the plateau with a large gain to 10.769, despite a low prior GP maximum. For the final batch there is no value in information solely for future learning, but this result argues against pure exploitation; an even portfolio balances modeled quality with the demonstrated value of off-model search.",
+  "expected_outcome": "The final batch should test the best remaining predictions while adding roughly 12 or more scaffolds; a new incumbent is plausible from either an uncertainty or diversity candidate."
+}

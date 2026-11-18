@@ -1,0 +1,7 @@
+{
+  "n_exploit": 10,
+  "n_uncertain": 10,
+  "n_diverse": 10,
+  "rationale": "The stronger exploitation allocation produced a large 0.515 incumbent gain, validating the learned ranking, but the remaining GP maximum has dropped after those leads were consumed. A balanced batch preserves exploitation momentum while hedging with uncertainty and diversity.",
+  "expected_outcome": "The batch should test the next tier of predicted candidates, add at least 13 scaffolds, and either improve the 10.769 incumbent or confirm that the strongest mean-ranked pocket has been harvested."
+}

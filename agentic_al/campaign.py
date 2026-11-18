@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterable
@@ -9,6 +10,10 @@ import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit.Chem.Scaffolds import MurckoScaffold
+
+
+_AVAILABILITY_CACHE: dict[tuple[str, float, str], np.ndarray] = {}
+_SCAFFOLD_CACHE: dict[str, np.ndarray] = {}
 
 
 @dataclass(frozen=True)
@@ -23,6 +28,8 @@ class CampaignConfig:
     n_bits: int = 4096
     noise: float = 0.05
     jitter: float = 1e-6
+    availability_fraction: float = 1.0
+    availability_salt: str = "agentic-al-availability-v1"
 
 
 @dataclass(frozen=True)
@@ -97,6 +104,45 @@ class ExactTanimotoGP:
         return np.concatenate(means), np.concatenate(stds)
 
 
+def deterministic_availability_mask(
+    smiles: Iterable[str],
+    fraction: float = 0.8,
+    salt: str = "agentic-al-availability-v1",
+) -> np.ndarray:
+    """Return a label-independent mask hashed from canonical isomeric SMILES."""
+    if not 0.0 < fraction <= 1.0:
+        raise ValueError("availability fraction must be in (0, 1]")
+    raw_values = tuple(map(str, smiles))
+    source_digest = hashlib.sha256("\0".join(raw_values).encode("utf-8")).hexdigest()
+    cache_key = (source_digest, float(fraction), str(salt))
+    if cache_key in _AVAILABILITY_CACHE:
+        return _AVAILABILITY_CACHE[cache_key].copy()
+    threshold = int(fraction * (1 << 64))
+    available = []
+    for index, value in enumerate(raw_values):
+        molecule = Chem.MolFromSmiles(str(value))
+        if molecule is None:
+            raise ValueError(f"Invalid SMILES at availability row {index}: {value}")
+        canonical = Chem.MolToSmiles(molecule, canonical=True, isomericSmiles=True)
+        digest = hashlib.sha256(f"{salt}\0{canonical}".encode("utf-8")).digest()
+        available.append(int.from_bytes(digest[:8], "big") < threshold)
+    result = np.asarray(available, dtype=bool)
+    _AVAILABILITY_CACHE[cache_key] = result
+    return result.copy()
+
+
+def _index_digest(indices: Iterable[int]) -> str:
+    ordered = sorted(map(int, indices))
+    payload = ",".join(map(str, ordered)).encode("ascii")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def _mask_digest(mask: np.ndarray) -> str:
+    values = np.asarray(mask, dtype=bool)
+    payload = len(values).to_bytes(8, "big") + np.packbits(values, bitorder="little").tobytes()
+    return hashlib.sha256(payload).hexdigest()
+
+
 def dataset_paths(root: Path) -> dict[str, Path]:
     base = root / "artifacts" / "zenodo" / "17935028"
     return {
@@ -146,11 +192,17 @@ def featurize(frame: pd.DataFrame, cache_path: Path, radius: int, n_bits: int) -
 
 
 def scaffolds(frame: pd.DataFrame) -> np.ndarray:
+    raw_values = tuple(frame["SMILES"].astype(str))
+    source_digest = hashlib.sha256("\0".join(raw_values).encode("utf-8")).hexdigest()
+    if source_digest in _SCAFFOLD_CACHE:
+        return _SCAFFOLD_CACHE[source_digest].copy()
     values = []
-    for smiles in frame["SMILES"]:
+    for smiles in raw_values:
         scaffold = MurckoScaffold.MurckoScaffoldSmilesFromSmiles(smiles)
         values.append(scaffold or smiles)
-    return np.asarray(values, dtype=object)
+    result = np.asarray(values, dtype=object)
+    _SCAFFOLD_CACHE[source_digest] = result
+    return result.copy()
 
 
 def _zscore(values: np.ndarray) -> np.ndarray:
@@ -231,18 +283,36 @@ def run_campaign(root: Path, config: CampaignConfig) -> tuple[pd.DataFrame, pd.D
     assay = HiddenAssay(labels)
     rng = np.random.default_rng(config.seed)
     initial = np.sort(rng.choice(len(frame), size=config.initial_size, replace=False))
+    base_available = deterministic_availability_mask(
+        frame["SMILES"].astype(str), config.availability_fraction, config.availability_salt
+    )
+    available = base_available.copy()
+    # Preserve the paired initialization; availability constrains later choices only.
+    available[initial] = True
+    if int(available.sum()) < config.initial_size + config.batch_size * config.cycles:
+        raise ValueError("Availability mask cannot support the frozen endpoint budget")
     observed = initial.tolist()
     observed_y = assay.reveal(initial).tolist()
+    availability_provenance = {
+        "availability_algorithm": "sha256-canonical-isomeric-smiles-u64-v1",
+        "availability_mask_digest": _mask_digest(base_available),
+        "availability_base_count": int(base_available.sum()),
+        "availability_effective_count": int(available.sum()),
+        "availability_excluded_fraction": float(1.0 - base_available.mean()),
+        "initial_set_digest": _index_digest(initial),
+    }
     trajectory: list[dict] = []
     decisions: list[dict] = []
     initial_metrics = _metrics(labels, top_2p, top_5p, scaffold_ids, observed)
-    trajectory.append({**asdict(config), "cycle": 0, "method": "initial-random", "measured": len(observed), **initial_metrics})
+    trajectory.append({**asdict(config), **availability_provenance, "cycle": 0, "method": "initial-random", "measured": len(observed), **initial_metrics})
     previous_best = initial_metrics["best_affinity"]
     last_improvement = float("inf")
 
     for cycle in range(config.cycles):
         gp = ExactTanimotoGP(config.noise, config.jitter).fit(features[observed], np.asarray(observed_y))
-        pool = np.setdiff1d(np.arange(len(frame)), np.asarray(observed), assume_unique=False)
+        pool = np.setdiff1d(
+            np.flatnonzero(available), np.asarray(observed), assume_unique=False
+        )
         mean, std = gp.predict(features[pool])
         method = _method_for_cycle(config.policy, cycle, last_improvement)
         chosen = select_batch(method, pool, mean, std, min(config.batch_size, len(pool)), rng)
@@ -257,6 +327,12 @@ def run_campaign(root: Path, config: CampaignConfig) -> tuple[pd.DataFrame, pd.D
             "target": config.target,
             "policy": config.policy,
             "seed": config.seed,
+            "initial_size": config.initial_size,
+            "batch_size": config.batch_size,
+            "cycles": config.cycles,
+            "availability_fraction": config.availability_fraction,
+            "availability_salt": config.availability_salt,
+            **availability_provenance,
             "cycle": cycle + 1,
             "method": method,
             "selected_indices": ";".join(map(str, chosen.tolist())),
@@ -272,6 +348,6 @@ def run_campaign(root: Path, config: CampaignConfig) -> tuple[pd.DataFrame, pd.D
         metrics = _metrics(labels, top_2p, top_5p, scaffold_ids, observed)
         last_improvement = float(metrics["best_affinity"] - previous_best)
         previous_best = metrics["best_affinity"]
-        trajectory.append({**asdict(config), "cycle": cycle + 1, "method": method, "measured": len(observed), **metrics})
+        trajectory.append({**asdict(config), **availability_provenance, "cycle": cycle + 1, "method": method, "measured": len(observed), **metrics})
 
     return pd.DataFrame(trajectory), pd.DataFrame(decisions)

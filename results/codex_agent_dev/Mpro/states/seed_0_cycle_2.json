@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 66,
+    "pool_unique_scaffolds": 1099
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.994716728457806,
+    "median": 6.323895822455955,
+    "min": 4.064680589394891,
+    "q25": 6.009087470511797,
+    "q75": 6.769646889242082
+  },
+  "gp_predicted_std": {
+    "max": 1.5819901968273749,
+    "median": 1.3506303282264203,
+    "min": 0.09390153630927595,
+    "q25": 1.2291911628998213,
+    "q75": 1.4672142262573593
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch will add broad scaffold coverage and has a reasonable chance of improving the 9.881 incumbent, while materially narrowing the upper uncertainty tail next cycle.",
+      "improvement": 0.1227192119999998,
+      "n_diverse": 12,
+      "n_exploit": 6,
+      "n_uncertain": 12,
+      "observed_best_after": 10.00343689,
+      "observed_best_before": 9.880717678,
+      "rationale": "The initial incumbent is already close to the maximum GP mean, while uncertainty is broad and 1,112 pool scaffolds remain. I will spend most of this early batch reducing uncertainty and expanding coverage, retaining six mean-ranked candidates to test the strongest local predictions.",
+      "selected_indices": [
+        964,
+        20,
+        486,
+        927,
+        2529,
+        419,
+        683,
+        767,
+        6,
+        223,
+        764,
+        123,
+        380,
+        611,
+        954,
+        298,
+        539,
+        547,
+        80,
+        2632,
+        674,
+        740,
+        164,
+        510,
+        154,
+        364,
+        128,
+        724,
+        5,
+        9
+      ],
+      "selected_predicted_mean": 7.031353286749754,
+      "selected_predicted_std": 1.2537068123149868
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.00343689,
+    "mean": 6.6900184459,
+    "quantiles": {
+      "max": 10.00343689,
+      "median": 6.65,
+      "min": 4.06,
+      "q25": 5.5,
+      "q75": 7.43862562925
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2659,
+  "remaining_assay_budget": 270,
+  "target": "Mpro",
+  "total_cycles": 10
+}

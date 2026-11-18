@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "generated_at_utc": "2026-09-09T14:19:07.125111+00:00",
+  "controller_model": "gpt-5.6-sol",
+  "controller_role": "Codex strategy controller (delegated sub-agent)",
+  "protocol": {
+    "execution": "persistent single-process hidden-assay session per seed",
+    "input": "One leakage-safe STATE_JSON per cycle from summarize_agent_state",
+    "action": "One validated BatchAllocation JSON per cycle; counts sum exactly to 30",
+    "feedback": "Only outcomes from the just-revealed batch plus prior revealed history",
+    "retries_or_fallbacks": 0,
+    "hidden_label_access": "No unrevealed affinity, top-active flag, or pool outcome was exposed before action selection"
+  },
+  "campaigns": 10,
+  "cycles_per_campaign": 10,
+  "actions": 100,
+  "runner_sha256": "6fef3235f03f51ded8264ab66d857f64a29fc130df12a54fea8d1149b7745358",
+  "code_commit": "2d4cc318fc0ab23738df61bd00116168b728a840"
+}

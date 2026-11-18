@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 67,
+    "pool_unique_scaffolds": 1086
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.172598414947267,
+    "median": 6.019316720008614,
+    "min": 4.108766151478024,
+    "q25": 5.7185069481303366,
+    "q75": 6.402339015989767
+  },
+  "gp_predicted_std": {
+    "max": 1.4314102990984998,
+    "median": 1.2283783221437141,
+    "min": 0.10373160743895629,
+    "q25": 1.127034096587715,
+    "q75": 1.3043604650291658
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "At least one selected compound should challenge the 9.308 incumbent, and the next state should show a lower GP uncertainty median or a clear high-affinity lead from a new region.",
+      "improvement": 0.6231498200000001,
+      "n_diverse": 11,
+      "n_exploit": 8,
+      "n_uncertain": 11,
+      "observed_best_after": 9.931272855,
+      "observed_best_before": 9.308123035,
+      "rationale": "The best observed affinity is below the GP maximum, leaving an actionable exploitation gap, but the large pool and high median uncertainty still favor early information gathering. The near-even uncertainty/diversity split preserves exploration across distinct scaffolds.",
+      "selected_indices": [
+        1390,
+        35,
+        1171,
+        1332,
+        2317,
+        2371,
+        2361,
+        550,
+        683,
+        767,
+        123,
+        223,
+        6,
+        954,
+        380,
+        677,
+        2424,
+        9,
+        894,
+        2632,
+        674,
+        77,
+        619,
+        164,
+        654,
+        681,
+        747,
+        556,
+        724,
+        2690
+      ],
+      "selected_predicted_mean": 6.868608080970724,
+      "selected_predicted_std": 1.0149966986812091
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.931272855,
+    "mean": 6.377842239077778,
+    "quantiles": {
+      "max": 9.931272855,
+      "median": 6.55,
+      "min": 4.1,
+      "q25": 5.2,
+      "q75": 7.004364805
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2659,
+  "remaining_assay_budget": 270,
+  "target": "Mpro",
+  "total_cycles": 10
+}

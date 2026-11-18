@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 66,
+    "pool_unique_scaffolds": 1090
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.994274945584017,
+    "median": 6.3695774725513195,
+    "min": 4.3072880666662865,
+    "q25": 6.099985239807867,
+    "q75": 6.608405963084777
+  },
+  "gp_predicted_std": {
+    "max": 1.4624338280851579,
+    "median": 1.2458455492975844,
+    "min": 0.09203432013921314,
+    "q25": 1.1280549424383892,
+    "q75": 1.358223966297505
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch should challenge the incumbent and add broad scaffold coverage, with lower uncertainty after retraining.",
+      "improvement": 0.6424619570000001,
+      "n_diverse": 12,
+      "n_exploit": 6,
+      "n_uncertain": 12,
+      "observed_best_after": 10.00343689,
+      "observed_best_before": 9.360974933,
+      "rationale": "The GP maximum is close to the 9.361 incumbent and uncertainty remains broad across a large pool. A 20-percent exploit allocation tests current ranking quality without sacrificing early chemical-space learning.",
+      "selected_indices": [
+        1085,
+        35,
+        1171,
+        1332,
+        2317,
+        15,
+        683,
+        223,
+        123,
+        6,
+        764,
+        767,
+        611,
+        539,
+        9,
+        894,
+        579,
+        329,
+        268,
+        677,
+        2632,
+        674,
+        199,
+        298,
+        77,
+        5,
+        128,
+        31,
+        584,
+        137
+      ],
+      "selected_predicted_mean": 6.6301463498446545,
+      "selected_predicted_std": 1.0035145544755795
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.00343689,
+    "mean": 6.702518111622223,
+    "quantiles": {
+      "max": 10.00343689,
+      "median": 6.5,
+      "min": 4.1,
+      "q25": 5.7,
+      "q75": 7.216657184
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2659,
+  "remaining_assay_budget": 270,
+  "target": "Mpro",
+  "total_cycles": 10
+}

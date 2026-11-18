@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "controller": "Codex sub-agent",
+  "model": "gpt-5.6-sol",
+  "config": {
+    "target": "TYK2",
+    "policy": "codex-agent",
+    "seed": 6,
+    "initial_size": 60,
+    "batch_size": 30,
+    "cycles": 10,
+    "radius": 4,
+    "n_bits": 4096,
+    "noise": 0.05,
+    "jitter": 1e-06
+  },
+  "code_commit": "2d4cc318fc0ab23738df61bd00116168b728a840",
+  "python": "3.12.14",
+  "hidden_label_contract": "Only STATE_JSON and prior revealed outcomes were used for decisions.",
+  "valid_actions": 10,
+  "invalid_actions": 0
+}

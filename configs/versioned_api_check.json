@@ -1,0 +1,33 @@
+{
+  "protocol": "versioned-api-check-v1",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "model": "gpt-5.6-sol",
+  "target": "D2R",
+  "seeds": [0, 1],
+  "cycles": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "expected_calls": 20,
+  "reasoning_effort": "medium",
+  "store": false,
+  "max_output_tokens": 2000,
+  "timeout_seconds": 120,
+  "state_path_template": "results/codex_agent_dev/D2R/view_seed{seed}_cycle{cycle}.json",
+  "output_jsonl": "results/versioned_api_check/responses.jsonl",
+  "instructions": "You are the strategy controller for a virtual ligand-discovery campaign.\nChoose how many compounds in the next assay batch should come from three deterministic\ncandidate queues: exploit (highest GP mean), uncertain (highest GP uncertainty), and\ndiverse (farthest from assayed and already selected compounds). Use only the supplied\nsummary. Never infer or request hidden labels. Return exactly one JSON object matching\nthe schema. The three non-negative integer allocations must sum to batch_size. State a\nshort, falsifiable expectation that can be checked after the assay.",
+  "output_format": {
+    "type": "json_schema",
+    "name": "batch_allocation",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "n_exploit": {"type": "integer", "minimum": 0, "maximum": 30},
+        "n_uncertain": {"type": "integer", "minimum": 0, "maximum": 30},
+        "n_diverse": {"type": "integer", "minimum": 0, "maximum": 30},
+        "rationale": {"type": "string", "minLength": 1, "maxLength": 600},
+        "expected_outcome": {"type": "string", "minLength": 1, "maxLength": 300}
+      },
+      "required": ["n_exploit", "n_uncertain", "n_diverse", "rationale", "expected_outcome"]
+    }
+  }
+}

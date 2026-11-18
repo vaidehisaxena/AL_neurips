@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 72,
+    "pool_unique_scaffolds": 1089
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.995191900047942,
+    "median": 5.955365940322689,
+    "min": 4.1064711135343135,
+    "q25": 5.697708299755682,
+    "q75": 6.385128260853697
+  },
+  "gp_predicted_std": {
+    "max": 1.4923629514746521,
+    "median": 1.2669050275566243,
+    "min": 0.10785286154371364,
+    "q25": 1.149894849097687,
+    "q75": 1.3677801636349254
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch should either improve the incumbent modestly or create a better-separated high-mean queue while adding many scaffolds.",
+      "improvement": 0.2441378899999993,
+      "n_diverse": 12,
+      "n_exploit": 6,
+      "n_uncertain": 12,
+      "observed_best_after": 10.00343689,
+      "observed_best_before": 9.759299,
+      "rationale": "The top predicted mean nearly matches the 9.759 incumbent, but there is no clear predicted improvement. I will use a small exploit probe and preserve most of the batch for uncertainty resolution and diversity.",
+      "selected_indices": [
+        20,
+        486,
+        927,
+        2529,
+        1288,
+        1216,
+        683,
+        767,
+        123,
+        223,
+        6,
+        764,
+        954,
+        547,
+        611,
+        539,
+        298,
+        766,
+        677,
+        9,
+        2632,
+        77,
+        654,
+        255,
+        724,
+        268,
+        543,
+        164,
+        5,
+        52
+      ],
+      "selected_predicted_mean": 6.569044731334092,
+      "selected_predicted_std": 1.0308618779942587
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.00343689,
+    "mean": 6.444774108277778,
+    "quantiles": {
+      "max": 10.00343689,
+      "median": 6.1,
+      "min": 4.1,
+      "q25": 5.32,
+      "q75": 7.004364805
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2659,
+  "remaining_assay_budget": 270,
+  "target": "Mpro",
+  "total_cycles": 10
+}

@@ -1,0 +1,40 @@
+{
+  "aggregate_endpoint": {
+    "mean_best_affinity": 10.76921607,
+    "mean_simple_regret": 0.0,
+    "mean_top_1p_recall": 0.46785714285714286,
+    "mean_top_2p_recall": 0.37407407407407406,
+    "mean_top_5p_recall": 0.289051094890511,
+    "mean_unique_top_5p_scaffolds": 33.4,
+    "std_best_affinity": 0.0,
+    "std_simple_regret": 0.0,
+    "std_top_1p_recall": 0.04894001140736778,
+    "std_top_2p_recall": 0.027328325458245258,
+    "std_top_5p_recall": 0.01890935204644812,
+    "std_unique_top_5p_scaffolds": 2.2211108331943574
+  },
+  "batch_size": 30,
+  "campaigns": 10,
+  "controller_model": "gpt-5.6-sol",
+  "cycles_per_campaign": 10,
+  "exported_at_utc": "2026-09-09T11:48:26.433522+00:00",
+  "git_commit_at_export": "2d4cc318fc0ab23738df61bd00116168b728a840",
+  "initial_size": 60,
+  "leakage_control": "Allocations used only emitted safe state summaries: revealed observed affinities, GP prediction quantiles, scaffold counts, and prior revealed outcomes. Full trajectory metrics were not inspected until all campaign decisions were complete.",
+  "measured_per_campaign": 360,
+  "protocol": "codex-agent-v1",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "status": "COMPLETE",
+  "target": "Mpro"
+}

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
-from typing import Any
+from typing import Any, Literal
 
 import numpy as np
 
@@ -15,6 +15,73 @@ diverse (farthest from assayed and already selected compounds). Use only the sup
 summary. Never infer or request hidden labels. Return exactly one JSON object matching
 the schema. The three non-negative integer allocations must sum to batch_size. State a
 short, falsifiable expectation that can be checked after the assay."""
+
+
+EvidenceMode = Literal["none", "observed", "shuffled"]
+
+
+@dataclass(frozen=True)
+class AgentViewSpec:
+    """Frozen allowlist for one agent-facing information condition."""
+
+    name: str
+    include_uncertainty: bool = True
+    include_diversity: bool = True
+    include_memory: bool = True
+    evidence_mode: EvidenceMode = "none"
+
+    def __post_init__(self) -> None:
+        if not self.name.strip():
+            raise ValueError("Agent-view variant name is required")
+        if self.evidence_mode not in {"none", "observed", "shuffled"}:
+            raise ValueError(f"Unknown evidence mode: {self.evidence_mode}")
+
+    @classmethod
+    def from_dict(cls, value: dict[str, Any]) -> "AgentViewSpec":
+        return cls(
+            name=str(value["name"]),
+            include_uncertainty=bool(value.get("include_uncertainty", True)),
+            include_diversity=bool(value.get("include_diversity", True)),
+            include_memory=bool(value.get("include_memory", True)),
+            evidence_mode=value.get("evidence_mode", "none"),
+        )
+
+
+LEGACY_VIEW_SPEC = AgentViewSpec(name="legacy", evidence_mode="none")
+
+
+_COMMON_HISTORY_FIELDS = (
+    "cycle",
+    "n_exploit",
+    "n_uncertain",
+    "n_diverse",
+    "rationale",
+    "expected_outcome",
+    "selected_predicted_mean",
+    "observed_best_before",
+    "observed_best_after",
+    "improvement",
+    "batch_affinity_mean",
+    "batch_affinity_max",
+    "incumbent_improved",
+)
+
+
+def project_history(
+    history: list[dict[str, Any]] | None, spec: AgentViewSpec
+) -> list[dict[str, Any]]:
+    """Project internal decisions to a variant-specific, agent-safe history."""
+    if not spec.include_memory:
+        return []
+    fields = list(_COMMON_HISTORY_FIELDS)
+    if spec.include_uncertainty:
+        fields.append("selected_predicted_std")
+    if spec.include_diversity:
+        fields.append("selected_new_scaffolds")
+    return [
+        {field: row[field] for field in fields if field in row}
+        for row in (history or [])
+    ]
 
 
 @dataclass(frozen=True)
@@ -79,6 +146,8 @@ def summarize_agent_state(
     observed_scaffolds: np.ndarray,
     pool_scaffolds: np.ndarray,
     history: list[dict[str, Any]] | None = None,
+    view_spec: AgentViewSpec = LEGACY_VIEW_SPEC,
+    explanatory_evidence: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Create the only state passed to an agent; hidden pool labels are not accepted."""
     observed = np.asarray(observed_affinities, dtype=float)
@@ -86,7 +155,7 @@ def summarize_agent_state(
     stds = np.asarray(predicted_std, dtype=float)
     if not len(observed) or len(means) != len(stds):
         raise ValueError("Observed labels and aligned pool predictions are required")
-    return {
+    state: dict[str, Any] = {
         "target": target,
         "cycle": int(cycle),
         "total_cycles": int(cycles),
@@ -100,13 +169,20 @@ def summarize_agent_state(
             "quantiles": _quantiles(observed),
         },
         "gp_predicted_mean": _quantiles(means),
-        "gp_predicted_std": _quantiles(stds),
-        "chemical_space": {
+        "history": project_history(history, view_spec),
+    }
+    if view_spec.include_uncertainty:
+        state["gp_predicted_std"] = _quantiles(stds)
+    if view_spec.include_diversity:
+        state["chemical_space"] = {
             "observed_unique_scaffolds": int(len(set(observed_scaffolds.tolist()))),
             "pool_unique_scaffolds": int(len(set(pool_scaffolds.tolist()))),
-        },
-        "history": list(history or []),
-    }
+        }
+    if view_spec.evidence_mode != "none":
+        if explanatory_evidence is None:
+            raise ValueError(f"Variant {view_spec.name!r} requires explanatory evidence")
+        state["explanatory_evidence"] = explanatory_evidence
+    return state
 
 
 def _rank(score: np.ndarray, pool: np.ndarray) -> np.ndarray:

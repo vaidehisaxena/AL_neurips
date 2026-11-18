@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 69,
+    "pool_unique_scaffolds": 1089
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.993350334859095,
+    "median": 5.7777058093873315,
+    "min": 4.167639717974505,
+    "q25": 5.46316284604238,
+    "q75": 6.206052018367635
+  },
+  "gp_predicted_std": {
+    "max": 1.4189845913973615,
+    "median": 1.2052471147035384,
+    "min": 0.10273547225439748,
+    "q25": 1.0991767189252595,
+    "q75": 1.3032769022144293
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch should materially expand scaffold coverage and has a reasonable chance of improving the weak incumbent from an uncertain or diverse region.",
+      "improvement": 1.40343689,
+      "n_diverse": 12,
+      "n_exploit": 5,
+      "n_uncertain": 13,
+      "observed_best_after": 10.00343689,
+      "observed_best_before": 8.6,
+      "rationale": "This seed begins with a relatively weak 8.6 incumbent, but even the GP maximum is below it. Broad exploration is therefore more credible than deep exploitation, with five mean-ranked candidates retained as a calibration check.",
+      "selected_indices": [
+        2596,
+        2602,
+        826,
+        1890,
+        350,
+        683,
+        123,
+        223,
+        6,
+        767,
+        380,
+        954,
+        12,
+        1944,
+        677,
+        2424,
+        298,
+        2632,
+        654,
+        364,
+        584,
+        268,
+        413,
+        62,
+        1757,
+        724,
+        5,
+        23,
+        1826,
+        751
+      ],
+      "selected_predicted_mean": 6.119122504159787,
+      "selected_predicted_std": 0.9444209540394444
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.00343689,
+    "mean": 6.1884668305999995,
+    "quantiles": {
+      "max": 10.00343689,
+      "median": 5.915,
+      "min": 4.16,
+      "q25": 5.074999999999999,
+      "q75": 7.004364805
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2659,
+  "remaining_assay_budget": 270,
+  "target": "Mpro",
+  "total_cycles": 10
+}

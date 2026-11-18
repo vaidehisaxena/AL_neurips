@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 75,
+    "pool_unique_scaffolds": 712
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 8.390147024532437,
+    "median": 6.893658144857788,
+    "min": 3.99862742776225,
+    "q25": 6.1276554749562155,
+    "q75": 7.259305162798466
+  },
+  "gp_predicted_std": {
+    "max": 1.3862783489538368,
+    "median": 0.9849684810829721,
+    "min": 0.10033349412985759,
+    "q25": 0.864027070204436,
+    "q75": 1.1760796321217626
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "Test the current ranking while materially expanding uncertain and diverse coverage.",
+      "improvement": 0.4202164029999995,
+      "n_diverse": 8,
+      "n_exploit": 12,
+      "n_uncertain": 10,
+      "observed_best_after": 9.420216403,
+      "observed_best_before": 9.0,
+      "rationale": "The incumbent is above the GP maximum but the gap is moderate, so use a near-balanced batch with a small exploitation lead.",
+      "selected_indices": [
+        13,
+        184,
+        243,
+        69,
+        267,
+        677,
+        105,
+        190,
+        732,
+        78,
+        130,
+        29,
+        1414,
+        1651,
+        1413,
+        1254,
+        1539,
+        1247,
+        1596,
+        1515,
+        1199,
+        1295,
+        1373,
+        8,
+        1721,
+        961,
+        1449,
+        1478,
+        1542,
+        1772
+      ],
+      "selected_predicted_mean": 6.982344393611734,
+      "selected_predicted_std": 1.0536496629060224
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.420216403,
+    "mean": 6.552306396044445,
+    "quantiles": {
+      "max": 9.420216403,
+      "median": 6.947415286,
+      "min": 3.602059991,
+      "q25": 5.24138468025,
+      "q75": 7.613889915750001
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 1709,
+  "remaining_assay_budget": 270,
+  "target": "USP7",
+  "total_cycles": 10
+}

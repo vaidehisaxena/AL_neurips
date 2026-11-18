@@ -1,0 +1,239 @@
+{
+  "campaigns": 200,
+  "actions": 2000,
+  "unique_selection_campaigns": 200,
+  "budget_valid_campaigns": 200,
+  "config_digest_matches": 200,
+  "prompt_digest_matches": 200,
+  "initial_digest_matches": 190,
+  "view_digest_matches": 2000,
+  "evidence_digest_matches": 2000,
+  "shuffle_digest_matches": 2000,
+  "forbidden_view_key_violations": 0,
+  "paired_initial_violations": 0,
+  "anomalies": [],
+  "status": "PASS_WITH_WARNING",
+  "repaired_checkpoint_files": 0,
+  "initial_indices_sha256_matches": 200,
+  "derived_legacy_initial_set_digest_matches": 10,
+  "legacy_schema_warnings": [
+    "D2R/full_reference/seed0: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/full_reference/seed1: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/minus_uncertainty/seed0: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/minus_uncertainty/seed1: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/minus_diversity/seed0: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/minus_diversity/seed1: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/minus_memory/seed0: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/minus_memory/seed1: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/shuffled_evidence/seed0: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches",
+    "D2R/shuffled_evidence/seed1: legacy session omits top-level initial_set_digest; derived digest from paired 60-index initial set matches"
+  ],
+  "aggregation": {
+    "endpoint_rows": 200,
+    "unique_endpoint_keys": 200,
+    "summary_rows": 20,
+    "prior_validated_rows": 150,
+    "prior_validated_rows_preserved": true,
+    "d2r_rows_added": 50
+  },
+  "d2r_integrity": {
+    "campaigns": 50,
+    "session_export_matches": 50,
+    "complete_view_files": 50,
+    "decisions": 500,
+    "action_checkpoint_matches": 500,
+    "view_checkpoint_matches": 500,
+    "trajectory_rows": 550,
+    "exact_budget_campaigns": 50,
+    "observed_360_unique_campaigns": 50,
+    "selection_lineage_campaigns": 50,
+    "valid_allocations": 500,
+    "config_digest_matches": 50,
+    "prompt_digest_matches": 50,
+    "initial_indices_sha256_matches": 50,
+    "paired_initial_violations": 0,
+    "permitted_top_level_views": 500,
+    "permitted_history_views": 500,
+    "forbidden_view_key_violations": 0,
+    "view_digest_matches": 500,
+    "evidence_digest_matches": 500,
+    "shuffle_digest_matches": 500,
+    "exact_shuffle_reconstructions": 100,
+    "legacy_missing_top_level_initial_set_digest": 10,
+    "legacy_derived_initial_set_digest_matches": 10
+  },
+  "paired_mean_top_2p_delta_vs_full_reference": {
+    "D2R": {
+      "full_reference": 0.0,
+      "minus_diversity": -0.016000000000000007,
+      "minus_memory": -0.004000000000000009,
+      "minus_uncertainty": 0.015999999999999993,
+      "shuffled_evidence": 0.0
+    },
+    "Mpro": {
+      "full_reference": 0.0,
+      "minus_diversity": 0.0018518518518518712,
+      "minus_memory": 0.0037037037037037203,
+      "minus_uncertainty": 0.0018518518518518712,
+      "shuffled_evidence": 0.0
+    },
+    "TYK2": {
+      "full_reference": 0.0,
+      "minus_diversity": 0.0,
+      "minus_memory": -0.0035000000000000087,
+      "minus_uncertainty": 0.0034999999999999975,
+      "shuffled_evidence": 0.0
+    },
+    "USP7": {
+      "full_reference": 0.0,
+      "minus_diversity": 0.0,
+      "minus_memory": -0.002857142857142858,
+      "minus_uncertainty": -0.01428571428571429,
+      "shuffled_evidence": 0.0
+    }
+  },
+  "identical_decision_paths": [
+    {
+      "target": "D2R",
+      "variant_a": "full_reference",
+      "variant_b": "shuffled_evidence",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 10
+    },
+    {
+      "target": "Mpro",
+      "variant_a": "full_reference",
+      "variant_b": "shuffled_evidence",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 10
+    },
+    {
+      "target": "TYK2",
+      "variant_a": "full_reference",
+      "variant_b": "minus_diversity",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 10
+    },
+    {
+      "target": "TYK2",
+      "variant_a": "full_reference",
+      "variant_b": "shuffled_evidence",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 10
+    },
+    {
+      "target": "TYK2",
+      "variant_a": "minus_diversity",
+      "variant_b": "shuffled_evidence",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 10
+    },
+    {
+      "target": "USP7",
+      "variant_a": "full_reference",
+      "variant_b": "minus_diversity",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 10
+    },
+    {
+      "target": "USP7",
+      "variant_a": "full_reference",
+      "variant_b": "shuffled_evidence",
+      "seeds": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 9
+    },
+    {
+      "target": "USP7",
+      "variant_a": "minus_diversity",
+      "variant_b": "shuffled_evidence",
+      "seeds": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "count": 9
+    }
+  ]
+}

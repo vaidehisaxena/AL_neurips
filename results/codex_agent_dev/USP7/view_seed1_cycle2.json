@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 76,
+    "pool_unique_scaffolds": 714
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.183880146564052,
+    "median": 7.14536997813401,
+    "min": 4.395747613084538,
+    "q25": 5.936414881714179,
+    "q75": 7.520706691621532
+  },
+  "gp_predicted_std": {
+    "max": 1.3826156352539725,
+    "median": 0.9752097720344884,
+    "min": 0.10021703930493796,
+    "q25": 0.8363043218727293,
+    "q75": 1.1820914398754387
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch will improve the incumbent or contain at least three compounds with affinity 8.3 or higher, and add at least 6 new scaffolds.",
+      "improvement": 1.5160393249999995,
+      "n_diverse": 8,
+      "n_exploit": 12,
+      "n_uncertain": 10,
+      "observed_best_after": 10.19382003,
+      "observed_best_before": 8.677780705,
+      "rationale": "The initial best of 8.678 is only modestly above the GP maximum of 8.309, so the ranking may already identify competitive chemistry. Use a near-balanced batch with a slight exploitation emphasis and meaningful uncertainty and diversity coverage.",
+      "selected_indices": [
+        254,
+        40,
+        36,
+        246,
+        207,
+        243,
+        135,
+        332,
+        46,
+        42,
+        0,
+        176,
+        1414,
+        1651,
+        1413,
+        1478,
+        1247,
+        1199,
+        1295,
+        1556,
+        1539,
+        1359,
+        1515,
+        1372,
+        1406,
+        1499,
+        1542,
+        1676,
+        1449,
+        1254
+      ],
+      "selected_predicted_mean": 7.10379652362927,
+      "selected_predicted_std": 1.0841876679187485
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.19382003,
+    "mean": 6.651334940455557,
+    "quantiles": {
+      "max": 10.19382003,
+      "median": 7.108300219,
+      "min": 3.838631998,
+      "q25": 5.340076899,
+      "q75": 7.763346486750001
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 1709,
+  "remaining_assay_budget": 270,
+  "target": "USP7",
+  "total_cycles": 10
+}

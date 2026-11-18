@@ -1,0 +1,148 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 181,
+    "pool_unique_scaffolds": 944
+  },
+  "cycle": 7,
+  "explanatory_evidence": {
+    "eligible_bit_count": 1938,
+    "evidence_sha256": "0408d76b666149052a5ad66da14a46020f95a7e1c3656be0d8ce2c55d2321c8a",
+    "features": [
+      {
+        "affinity_difference": -3.2401693044194917,
+        "bit_index": 1382,
+        "prevalence": 0.016666666666666666,
+        "rank": 1,
+        "score": 1.8263542657667846,
+        "sign": -1,
+        "standardized_enrichment": -1.8263542657667846,
+        "support": 4
+      },
+      {
+        "affinity_difference": 3.2132166358935175,
+        "bit_index": 1380,
+        "prevalence": 0.9,
+        "rank": 2,
+        "score": 1.8111621210016733,
+        "sign": 1,
+        "standardized_enrichment": 1.8111621210016733,
+        "support": 216
+      },
+      {
+        "affinity_difference": -3.120976864569619,
+        "bit_index": 3827,
+        "prevalence": 0.0125,
+        "rank": 3,
+        "score": 1.759170239095695,
+        "sign": -1,
+        "standardized_enrichment": -1.759170239095695,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.8957926088262704,
+        "bit_index": 2797,
+        "prevalence": 0.016666666666666666,
+        "rank": 4,
+        "score": 1.632242851227589,
+        "sign": -1,
+        "standardized_enrichment": -1.632242851227589,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.625866474787234,
+        "bit_index": 3245,
+        "prevalence": 0.020833333333333332,
+        "rank": 5,
+        "score": 1.4800962502238326,
+        "sign": -1,
+        "standardized_enrichment": -1.4800962502238326,
+        "support": 5
+      },
+      {
+        "affinity_difference": 2.5529040953574462,
+        "bit_index": 3969,
+        "prevalence": 0.020833333333333332,
+        "rank": 6,
+        "score": 1.4389702656247159,
+        "sign": 1,
+        "standardized_enrichment": 1.4389702656247159,
+        "support": 5
+      },
+      {
+        "affinity_difference": -2.522925900952992,
+        "bit_index": 3766,
+        "prevalence": 0.025,
+        "rank": 7,
+        "score": 1.4220727525361614,
+        "sign": -1,
+        "standardized_enrichment": -1.4220727525361614,
+        "support": 6
+      },
+      {
+        "affinity_difference": -2.457501018995763,
+        "bit_index": 3487,
+        "prevalence": 0.016666666666666666,
+        "rank": 8,
+        "score": 1.385195354775836,
+        "sign": -1,
+        "standardized_enrichment": -1.385195354775836,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.440207461682202,
+        "bit_index": 937,
+        "prevalence": 0.016666666666666666,
+        "rank": 9,
+        "score": 1.3754476659353718,
+        "sign": 1,
+        "standardized_enrichment": 1.3754476659353718,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.431284938572033,
+        "bit_index": 538,
+        "prevalence": 0.016666666666666666,
+        "rank": 10,
+        "score": 1.3704183953594695,
+        "sign": -1,
+        "standardized_enrichment": -1.3704183953594695,
+        "support": 4
+      }
+    ],
+    "method": "observed-fingerprint-enrichment-v1",
+    "observed_count": 240
+  },
+  "gp_predicted_mean": {
+    "max": 7.995412490056156,
+    "median": 6.942866030194175,
+    "min": 2.0050039157136865,
+    "q25": 6.634976931523619,
+    "q75": 7.205881691614348
+  },
+  "gp_predicted_std": {
+    "max": 1.6887194486120487,
+    "median": 1.5672034494270806,
+    "min": 0.12536870138340112,
+    "q25": 1.426595175118605,
+    "q75": 1.6440724812546446
+  },
+  "history": [],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.60032628,
+    "mean": 7.072494618429167,
+    "quantiles": {
+      "max": 10.60032628,
+      "median": 7.305416958,
+      "min": -2.716000003,
+      "q25": 6.10676502575,
+      "q75": 8.2274178485
+    }
+  },
+  "observed_count": 240,
+  "pool_count": 2262,
+  "remaining_assay_budget": 120,
+  "target": "D2R",
+  "total_cycles": 10
+}

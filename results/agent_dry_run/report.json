@@ -1,0 +1,44 @@
+{
+  "status": "DRY_RUN_ONLY_NO_API_CALLS",
+  "model": "gpt-5.4",
+  "targets": [
+    "D2R",
+    "Mpro",
+    "TYK2",
+    "USP7"
+  ],
+  "variants": [
+    "agent_gp_chem",
+    "full_agent",
+    "full_minus_shap",
+    "full_shuffled_shap",
+    "full_minus_memory"
+  ],
+  "seeds": 10,
+  "cycles": 10,
+  "campaigns": 200,
+  "gp_fits": 2000,
+  "llm_calls": 2000,
+  "estimated_input_tokens": 3600000,
+  "estimated_output_tokens": 360000,
+  "estimated_api_cost_usd": 14.4,
+  "development_gate": {
+    "target_count": 1,
+    "variant_count": 1,
+    "seeds": 2,
+    "llm_calls": 20,
+    "estimated_api_cost_usd": 0.14
+  },
+  "compute_runtime_lower_bound_seconds": 211.41,
+  "assumptions": {
+    "input_tokens_per_call": 1800,
+    "output_tokens_per_call": 180,
+    "input_price_usd_per_million": 2.5,
+    "output_price_usd_per_million": 15.0,
+    "pricing_checked_on": "2026-09-09",
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+    "excludes_retries": true,
+    "excludes_prompt_cache_discount": true,
+    "runtime_excludes_network_latency": true
+  }
+}

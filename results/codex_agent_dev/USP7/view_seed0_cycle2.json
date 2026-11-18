@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 76,
+    "pool_unique_scaffolds": 708
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 9.21105853448183,
+    "median": 7.126633328978558,
+    "min": 4.051973016107844,
+    "q25": 6.078189834249204,
+    "q75": 7.547959977179899
+  },
+  "gp_predicted_std": {
+    "max": 1.4303256228263426,
+    "median": 1.0107958792707685,
+    "min": 0.36947167669828607,
+    "q25": 0.9089974071651851,
+    "q75": 1.195534644344731
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch will add at least 7 new scaffolds and contain at least one affinity of 8.8 or higher.",
+      "improvement": 0.52625849,
+      "n_diverse": 10,
+      "n_exploit": 8,
+      "n_uncertain": 12,
+      "observed_best_after": 10.19382003,
+      "observed_best_before": 9.66756154,
+      "rationale": "The initial 9.668 best already exceeds the GP pool maximum, while uncertainty is substantial and 727 pool scaffolds remain. Open with an exploration majority to improve coverage and model resolution, retaining eight high-mean candidates.",
+      "selected_indices": [
+        62,
+        0,
+        134,
+        160,
+        141,
+        115,
+        309,
+        258,
+        1414,
+        1199,
+        1295,
+        1247,
+        1413,
+        1478,
+        1510,
+        1024,
+        1618,
+        1254,
+        1556,
+        1336,
+        1359,
+        1721,
+        1671,
+        1542,
+        1797,
+        1449,
+        1320,
+        1307,
+        1582,
+        1383
+      ],
+      "selected_predicted_mean": 7.032447544481408,
+      "selected_predicted_std": 1.175028000029593
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.19382003,
+    "mean": 6.590109510455555,
+    "quantiles": {
+      "max": 10.19382003,
+      "median": 6.698970004,
+      "min": 3.326979093,
+      "q25": 5.37995275875,
+      "q75": 7.537602002
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 1709,
+  "remaining_assay_budget": 270,
+  "target": "USP7",
+  "total_cycles": 10
+}

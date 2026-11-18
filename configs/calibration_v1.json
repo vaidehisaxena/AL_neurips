@@ -1,0 +1,40 @@
+{
+  "protocol": "agentic-al-calibration-v1",
+  "frozen_date": "2026-09-10",
+  "legacy": {
+    "input_decisions": "results/codex_agent_dev/decisions.csv",
+    "outcomes_csv": "results/calibration/legacy_batch_outcomes.csv",
+    "claim_scores_csv": "results/calibration/legacy_claim_scores.csv",
+    "decision_scores_csv": "results/calibration/legacy_decision_scores.csv",
+    "summary_csv": "results/calibration/legacy_scoring_summary.csv",
+    "unscorable_csv": "results/calibration/legacy_unscorable.csv",
+    "backfill_validation_json": "results/calibration/legacy_backfill_validation.json",
+    "scoring_validation_json": "results/calibration/legacy_scoring_validation.json",
+    "parse_policy": "Only objective threshold clauses supported by versioned deterministic rules are scored. Vague or hedged prose is unscorable, not false.",
+    "probabilistic_calibration": false
+  },
+  "scoring": {
+    "numeric_tolerance": 1e-09,
+    "conjunction_definition": "All scored atomic clauses in the expectation are satisfied.",
+    "signed_margin_definition": "Positive values favor satisfaction: observed minus threshold for lower-bound claims and threshold minus observed for upper-bound claims.",
+    "supported_metrics": [
+      "batch_affinity_mean",
+      "batch_affinity_max",
+      "batch_affinity_count_at_or_above",
+      "new_scaffolds_in_batch",
+      "cumulative_affinity_mean_after",
+      "observed_unique_scaffolds_after",
+      "post_gp_predicted_mean_max",
+      "post_gp_predicted_std_median",
+      "post_gp_predicted_std_max"
+    ]
+  },
+  "prospective": {
+    "quantiles": [0.1, 0.5, 0.9],
+    "binary_event": "incumbent_improved",
+    "reliability_bins": 5,
+    "bootstrap_blocks": ["target", "seed"],
+    "bootstrap_replicates": 10000,
+    "note": "Prospective forecast scoring is separate from this legacy audit."
+  }
+}

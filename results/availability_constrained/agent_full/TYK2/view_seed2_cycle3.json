@@ -1,0 +1,183 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 39,
+    "pool_unique_scaffolds": 91
+  },
+  "cycle": 3,
+  "explanatory_evidence": {
+    "eligible_bit_count": 611,
+    "evidence_sha256": "48df99f0f6e5d0211fb5f827fd889da1a32342ef3bc3207c4ef3dab9cc60ff2d",
+    "features": [
+      {
+        "affinity_difference": -3.06455477362931,
+        "bit_index": 235,
+        "prevalence": 0.03333333333333333,
+        "rank": 1,
+        "score": 1.6547881739790777,
+        "sign": -1,
+        "standardized_enrichment": -1.6547881739790777,
+        "support": 4
+      },
+      {
+        "affinity_difference": -3.0477510370170924,
+        "bit_index": 934,
+        "prevalence": 0.025,
+        "rank": 2,
+        "score": 1.6457145477336488,
+        "sign": -1,
+        "standardized_enrichment": -1.6457145477336488,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.0477510370170924,
+        "bit_index": 3867,
+        "prevalence": 0.025,
+        "rank": 3,
+        "score": 1.6457145477336488,
+        "sign": -1,
+        "standardized_enrichment": -1.6457145477336488,
+        "support": 3
+      },
+      {
+        "affinity_difference": 2.9446681586982777,
+        "bit_index": 248,
+        "prevalence": 0.03333333333333333,
+        "rank": 4,
+        "score": 1.590052195260933,
+        "sign": 1,
+        "standardized_enrichment": 1.590052195260933,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.9446681586982777,
+        "bit_index": 418,
+        "prevalence": 0.03333333333333333,
+        "rank": 5,
+        "score": 1.590052195260933,
+        "sign": 1,
+        "standardized_enrichment": 1.590052195260933,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.9446681586982777,
+        "bit_index": 891,
+        "prevalence": 0.03333333333333333,
+        "rank": 6,
+        "score": 1.590052195260933,
+        "sign": 1,
+        "standardized_enrichment": 1.590052195260933,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.9446681586982777,
+        "bit_index": 1681,
+        "prevalence": 0.03333333333333333,
+        "rank": 7,
+        "score": 1.590052195260933,
+        "sign": 1,
+        "standardized_enrichment": 1.590052195260933,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.9446681586982777,
+        "bit_index": 3446,
+        "prevalence": 0.03333333333333333,
+        "rank": 8,
+        "score": 1.590052195260933,
+        "sign": 1,
+        "standardized_enrichment": 1.590052195260933,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.9446681586982777,
+        "bit_index": 3790,
+        "prevalence": 0.03333333333333333,
+        "rank": 9,
+        "score": 1.590052195260933,
+        "sign": 1,
+        "standardized_enrichment": 1.590052195260933,
+        "support": 4
+      },
+      {
+        "affinity_difference": 2.907851907096492,
+        "bit_index": 954,
+        "prevalence": 0.05,
+        "rank": 10,
+        "score": 1.5701722772104807,
+        "sign": 1,
+        "standardized_enrichment": 1.5701722772104807,
+        "support": 6
+      }
+    ],
+    "method": "observed-fingerprint-enrichment-v1",
+    "observed_count": 120
+  },
+  "gp_predicted_mean": {
+    "max": 10.775779337314091,
+    "median": 7.291220376231103,
+    "min": 4.691926821081274,
+    "q25": 6.74565482740815,
+    "q75": 7.864978540822954
+  },
+  "gp_predicted_std": {
+    "max": 1.5424904324806277,
+    "median": 1.33770562119863,
+    "min": 0.5721856482469397,
+    "q25": 1.26153298644313,
+    "q75": 1.3985301489565036
+  },
+  "history": [
+    {
+      "batch_affinity_max": 11.3669415,
+      "batch_affinity_mean": 8.4225697723,
+      "cycle": 1,
+      "expected_outcome": "The batch mean affinity will exceed 7.52 and at least 15 selections will add previously unobserved scaffolds.",
+      "improvement": 0.5872776699999989,
+      "incumbent_improved": true,
+      "n_diverse": 10,
+      "n_exploit": 10,
+      "n_uncertain": 10,
+      "observed_best_after": 11.3669415,
+      "observed_best_before": 10.77966383,
+      "rationale": "The initial TYK2 view has 94 pool scaffolds, median uncertainty 1.106, and predicted-mean maximum 10.350. A near-balanced opening batch probes ranked leads, model uncertainty, and chemical-space coverage before feedback is available.",
+      "selected_new_scaffolds": 9,
+      "selected_predicted_mean": 8.14425572138308,
+      "selected_predicted_std": 1.146800616715738
+    },
+    {
+      "batch_affinity_max": 12.17777713,
+      "batch_affinity_mean": 8.198655560966667,
+      "cycle": 2,
+      "expected_outcome": "The batch mean affinity will exceed 7.87 and at least 13 selections will add previously unobserved scaffolds.",
+      "improvement": 0.8108356300000015,
+      "incumbent_improved": true,
+      "n_diverse": 8,
+      "n_exploit": 12,
+      "n_uncertain": 10,
+      "observed_best_after": 12.17777713,
+      "observed_best_before": 11.3669415,
+      "rationale": "Cycle 1 returned mean 8.423, maximum 11.367, and 9 new scaffolds; the incumbent improved at 11.367. With predicted maximum 11.034 and median uncertainty 1.299, I follow the campaign's gradual exploitation shift while retaining uncertainty sampling and 8 diversity slots.",
+      "selected_new_scaffolds": 9,
+      "selected_predicted_mean": 8.492642317534454,
+      "selected_predicted_std": 1.3135625588620845
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 12.17777713,
+    "mean": 7.841827144091666,
+    "quantiles": {
+      "max": 12.17777713,
+      "median": 7.7554115945,
+      "min": 3.283113438,
+      "q25": 6.59947148675,
+      "q75": 9.312652270000001
+    }
+  },
+  "observed_count": 120,
+  "pool_count": 7913,
+  "remaining_assay_budget": 240,
+  "target": "TYK2",
+  "total_cycles": 10
+}

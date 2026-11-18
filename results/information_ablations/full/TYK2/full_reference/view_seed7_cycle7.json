@@ -1,0 +1,251 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 56,
+    "pool_unique_scaffolds": 96
+  },
+  "cycle": 7,
+  "explanatory_evidence": {
+    "eligible_bit_count": 1019,
+    "evidence_sha256": "42d0188910ce4b6b94883d455a7c03504d384c856d6a70cdfbcc0273653ecd4c",
+    "features": [
+      {
+        "affinity_difference": -3.3750967940675114,
+        "bit_index": 2323,
+        "prevalence": 0.0125,
+        "rank": 1,
+        "score": 1.8025329790864093,
+        "sign": -1,
+        "standardized_enrichment": -1.8025329790864093,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.1950747174430383,
+        "bit_index": 3867,
+        "prevalence": 0.0125,
+        "rank": 2,
+        "score": 1.706388853486928,
+        "sign": -1,
+        "standardized_enrichment": -1.706388853486928,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.1089669176118147,
+        "bit_index": 484,
+        "prevalence": 0.0125,
+        "rank": 3,
+        "score": 1.6604013875199752,
+        "sign": -1,
+        "standardized_enrichment": -1.6604013875199752,
+        "support": 3
+      },
+      {
+        "affinity_difference": 3.0888522558553184,
+        "bit_index": 1617,
+        "prevalence": 0.020833333333333332,
+        "rank": 4,
+        "score": 1.6496587797100353,
+        "sign": 1,
+        "standardized_enrichment": 1.6496587797100353,
+        "support": 5
+      },
+      {
+        "affinity_difference": -3.073306613703391,
+        "bit_index": 2106,
+        "prevalence": 0.016666666666666666,
+        "rank": 5,
+        "score": 1.6413563414779884,
+        "sign": -1,
+        "standardized_enrichment": -1.6413563414779884,
+        "support": 4
+      },
+      {
+        "affinity_difference": -3.066268831584747,
+        "bit_index": 645,
+        "prevalence": 0.016666666666666666,
+        "rank": 6,
+        "score": 1.6375976835364505,
+        "sign": -1,
+        "standardized_enrichment": -1.6375976835364505,
+        "support": 4
+      },
+      {
+        "affinity_difference": -3.021912878118144,
+        "bit_index": 2597,
+        "prevalence": 0.0125,
+        "rank": 7,
+        "score": 1.613908564728685,
+        "sign": -1,
+        "standardized_enrichment": -1.613908564728685,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.021912878118144,
+        "bit_index": 2753,
+        "prevalence": 0.0125,
+        "rank": 8,
+        "score": 1.613908564728685,
+        "sign": -1,
+        "standardized_enrichment": -1.613908564728685,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.906050040178723,
+        "bit_index": 2169,
+        "prevalence": 0.020833333333333332,
+        "rank": 9,
+        "score": 1.5520298693373573,
+        "sign": -1,
+        "standardized_enrichment": -1.5520298693373573,
+        "support": 5
+      },
+      {
+        "affinity_difference": -2.818116532464135,
+        "bit_index": 2952,
+        "prevalence": 0.0125,
+        "rank": 10,
+        "score": 1.5050673502472682,
+        "sign": -1,
+        "standardized_enrichment": -1.5050673502472682,
+        "support": 3
+      }
+    ],
+    "method": "observed-fingerprint-enrichment-v1",
+    "observed_count": 240
+  },
+  "gp_predicted_mean": {
+    "max": 11.106943642948465,
+    "median": 7.302649961976941,
+    "min": 3.9757961732194316,
+    "q25": 6.670051489632477,
+    "q75": 8.009858712263542
+  },
+  "gp_predicted_std": {
+    "max": 1.426864421275119,
+    "median": 1.217184452863481,
+    "min": 0.58039674288194,
+    "q25": 1.1545951558056329,
+    "q75": 1.2751026672234698
+  },
+  "history": [
+    {
+      "batch_affinity_max": 11.66863963,
+      "batch_affinity_mean": 8.643032501566667,
+      "cycle": 1,
+      "expected_outcome": "The next-batch affinity mean will be at least 7.208 and at least 3 new scaffolds will be observed.",
+      "improvement": 1.1796361999999991,
+      "incumbent_improved": true,
+      "n_diverse": 11,
+      "n_exploit": 10,
+      "n_uncertain": 9,
+      "observed_best_after": 11.66863963,
+      "observed_best_before": 10.48900343,
+      "rationale": "Cycle 1: allocate 10 to exploitation because the GP median/q75 are 7.208/7.780 versus observed best 10.489; allocate 9 to uncertainty because the uncertainty IQR is 0.126; retain 11 for diversity because the eligible pool contains 103 unique scaffolds.",
+      "selected_new_scaffolds": 9,
+      "selected_predicted_mean": 8.092184244676758,
+      "selected_predicted_std": 1.1630411991798426
+    },
+    {
+      "batch_affinity_max": 12.0943809,
+      "batch_affinity_mean": 8.752136731666667,
+      "cycle": 2,
+      "expected_outcome": "The next-batch affinity mean will be at least 7.297 and at least 3 new scaffolds will be observed.",
+      "improvement": 0.4257412700000014,
+      "incumbent_improved": true,
+      "n_diverse": 9,
+      "n_exploit": 12,
+      "n_uncertain": 9,
+      "observed_best_after": 12.0943809,
+      "observed_best_before": 11.66863963,
+      "rationale": "Cycle 2: allocate 12 to exploitation because the GP median/q75 are 7.297/7.868 versus observed best 11.669; allocate 9 to uncertainty because the uncertainty IQR is 0.142; retain 9 for diversity because the eligible pool contains 102 unique scaffolds.",
+      "selected_new_scaffolds": 7,
+      "selected_predicted_mean": 8.561277808997037,
+      "selected_predicted_std": 1.2757880222472084
+    },
+    {
+      "batch_affinity_max": 10.75128108,
+      "batch_affinity_mean": 8.258691503833335,
+      "cycle": 3,
+      "expected_outcome": "The next-batch affinity mean will be at least 7.283 and at least 3 new scaffolds will be observed.",
+      "improvement": 0.0,
+      "incumbent_improved": false,
+      "n_diverse": 9,
+      "n_exploit": 12,
+      "n_uncertain": 9,
+      "observed_best_after": 12.0943809,
+      "observed_best_before": 12.0943809,
+      "rationale": "Cycle 3: allocate 12 to exploitation because the GP median/q75 are 7.283/7.886 versus observed best 12.094; allocate 9 to uncertainty because the uncertainty IQR is 0.142; retain 9 for diversity because the eligible pool contains 101 unique scaffolds.",
+      "selected_new_scaffolds": 6,
+      "selected_predicted_mean": 8.515390697007602,
+      "selected_predicted_std": 1.3095222611455875
+    },
+    {
+      "batch_affinity_max": 11.49238625,
+      "batch_affinity_mean": 8.595908958166666,
+      "cycle": 4,
+      "expected_outcome": "The next-batch affinity mean will be at least 7.306 and at least 3 new scaffolds will be observed.",
+      "improvement": 0.0,
+      "incumbent_improved": false,
+      "n_diverse": 9,
+      "n_exploit": 12,
+      "n_uncertain": 9,
+      "observed_best_after": 12.0943809,
+      "observed_best_before": 12.0943809,
+      "rationale": "Cycle 4: allocate 12 to exploitation because the GP median/q75 are 7.306/7.925 versus observed best 12.094; allocate 9 to uncertainty because the uncertainty IQR is 0.136; retain 9 for diversity because the eligible pool contains 98 unique scaffolds.",
+      "selected_new_scaffolds": 6,
+      "selected_predicted_mean": 8.504311172079772,
+      "selected_predicted_std": 1.3017481368281374
+    },
+    {
+      "batch_affinity_max": 11.22222451,
+      "batch_affinity_mean": 8.219563019533332,
+      "cycle": 5,
+      "expected_outcome": "The next-batch affinity mean will be at least 7.247 and at least 3 new scaffolds will be observed.",
+      "improvement": 0.0,
+      "incumbent_improved": false,
+      "n_diverse": 9,
+      "n_exploit": 12,
+      "n_uncertain": 9,
+      "observed_best_after": 12.0943809,
+      "observed_best_before": 12.0943809,
+      "rationale": "Cycle 5: allocate 12 to exploitation because the GP median/q75 are 7.247/7.908 versus observed best 12.094; allocate 9 to uncertainty because the uncertainty IQR is 0.128; retain 9 for diversity because the eligible pool contains 96 unique scaffolds.",
+      "selected_new_scaffolds": 3,
+      "selected_predicted_mean": 8.43896998279138,
+      "selected_predicted_std": 1.3202406470659114
+    },
+    {
+      "batch_affinity_max": 12.17777713,
+      "batch_affinity_mean": 8.7211201076,
+      "cycle": 6,
+      "expected_outcome": "The next-batch affinity mean will be at least 7.269 and at least 3 new scaffolds will be observed.",
+      "improvement": 0.08339622999999996,
+      "incumbent_improved": true,
+      "n_diverse": 9,
+      "n_exploit": 12,
+      "n_uncertain": 9,
+      "observed_best_after": 12.17777713,
+      "observed_best_before": 12.0943809,
+      "rationale": "Cycle 6: allocate 12 to exploitation because the GP median/q75 are 7.269/7.932 versus observed best 12.094; allocate 9 to uncertainty because the uncertainty IQR is 0.122; retain 9 for diversity because the eligible pool contains 96 unique scaffolds.",
+      "selected_new_scaffolds": 2,
+      "selected_predicted_mean": 8.464966335820234,
+      "selected_predicted_std": 1.2357623335336514
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 12.17777713,
+    "mean": 8.247445714808332,
+    "quantiles": {
+      "max": 12.17777713,
+      "median": 8.062803799000001,
+      "min": 3.54346386,
+      "q25": 6.84782056025,
+      "q75": 9.90969745975
+    }
+  },
+  "observed_count": 240,
+  "pool_count": 9757,
+  "remaining_assay_budget": 120,
+  "target": "TYK2",
+  "total_cycles": 10
+}

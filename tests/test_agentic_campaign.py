@@ -6,6 +6,7 @@ from agentic_al.campaign import (
     CampaignState,
     ExactTanimotoGP,
     HiddenAssay,
+    deterministic_availability_mask,
     select_batch,
 )
 from agentic_al.agent import (
@@ -100,3 +101,23 @@ def test_portfolio_selection_is_unique_and_deterministic():
     assert np.array_equal(first, second)
     assert len(first) == len(set(first)) == 3
     assert set(first).issubset({1, 2, 3, 4})
+
+
+def test_availability_mask_is_deterministic_and_label_independent():
+    smiles = ["C" * length + "O" for length in range(1, 80)]
+    first = deterministic_availability_mask(smiles, 0.8, "frozen-salt")
+    second = deterministic_availability_mask(smiles, 0.8, "frozen-salt")
+    assert np.array_equal(first, second)
+    assert first.dtype == bool
+    assert 0 < first.sum() < len(first)
+    try:
+        deterministic_availability_mask(smiles, 0.0)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Invalid availability fractions must be rejected")
+
+
+def test_availability_mask_uses_canonical_smiles():
+    mask = deterministic_availability_mask(["CCO", "OCC"], 0.8, "frozen-salt")
+    assert mask[0] == mask[1]

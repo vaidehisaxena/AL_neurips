@@ -1,0 +1,7 @@
+{
+  "expected_outcome": "The next-batch affinity mean will be at least 7.159.",
+  "n_diverse": 9,
+  "n_exploit": 10,
+  "n_uncertain": 11,
+  "rationale": "Cycle 1: allocate 10 to exploitation because the GP median/q75 are 7.159/7.522 versus observed best 8.678; allocate 11 to uncertainty because the uncertainty IQR is 0.315; retain 9 for diversity because chemical-space counts are withheld."
+}

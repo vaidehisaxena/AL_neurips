@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 68,
+    "pool_unique_scaffolds": 718
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 8.711551515865736,
+    "median": 7.104804770924665,
+    "min": 4.585427734156086,
+    "q25": 6.266950301581949,
+    "q75": 7.403425771954131
+  },
+  "gp_predicted_std": {
+    "max": 1.3480296770176214,
+    "median": 0.9280376069661935,
+    "min": 0.09699896552420256,
+    "q25": 0.825402305282691,
+    "q75": 1.1607053335997277
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "Improve high-affinity recovery and broaden scaffold coverage.",
+      "improvement": 0.7928745070000005,
+      "n_diverse": 8,
+      "n_exploit": 12,
+      "n_uncertain": 10,
+      "observed_best_after": 9.537602002,
+      "observed_best_before": 8.744727495,
+      "rationale": "The modest incumbent-to-GP gap supports testing high-mean candidates while keeping most of the batch exploratory.",
+      "selected_indices": [
+        97,
+        54,
+        269,
+        108,
+        90,
+        246,
+        207,
+        104,
+        465,
+        94,
+        136,
+        6,
+        1414,
+        1651,
+        1515,
+        1413,
+        1618,
+        1596,
+        1603,
+        1539,
+        961,
+        1247,
+        1478,
+        1382,
+        1585,
+        1542,
+        1449,
+        1320,
+        1359,
+        1353
+      ],
+      "selected_predicted_mean": 7.108649402543162,
+      "selected_predicted_std": 0.9972697141758364
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.537602002,
+    "mean": 6.6698086335666655,
+    "quantiles": {
+      "max": 9.537602002,
+      "median": 7.2010537265,
+      "min": 3.698970004,
+      "q25": 5.3784412905,
+      "q75": 7.62454399625
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 1709,
+  "remaining_assay_budget": 270,
+  "target": "USP7",
+  "total_cycles": 10
+}

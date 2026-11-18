@@ -1,0 +1,59 @@
+{
+  "protocol": "codex-agent-availability-constrained-v1",
+  "controller_model": "gpt-5.6-sol",
+  "targets": ["D2R", "Mpro", "TYK2", "USP7"],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "initial_size": 60,
+  "cycles": 10,
+  "batch_size": 30,
+  "radius": 4,
+  "n_bits": 4096,
+  "noise": 0.05,
+  "jitter": 0.000001,
+  "prompt_version": "information-study-v1",
+  "active_variants": ["full_reference"],
+  "availability": {
+    "fraction": 0.8,
+    "salt": "agentic-al-availability-v1",
+    "algorithm": "sha256-canonical-isomeric-smiles-u64-v1",
+    "grandfather_initial": true
+  },
+  "evidence": {
+    "method": "observed-fingerprint-enrichment-v1",
+    "top_k": 10,
+    "min_support": 3,
+    "shuffle_protocol_version": "within-packet-bit-identity-derangement-v1"
+  },
+  "variants": {
+    "full_reference": {
+      "include_uncertainty": true,
+      "include_diversity": true,
+      "include_memory": true,
+      "evidence_mode": "observed"
+    },
+    "minus_uncertainty": {
+      "include_uncertainty": false,
+      "include_diversity": true,
+      "include_memory": true,
+      "evidence_mode": "observed"
+    },
+    "minus_diversity": {
+      "include_uncertainty": true,
+      "include_diversity": false,
+      "include_memory": true,
+      "evidence_mode": "observed"
+    },
+    "minus_memory": {
+      "include_uncertainty": true,
+      "include_diversity": true,
+      "include_memory": false,
+      "evidence_mode": "observed"
+    },
+    "shuffled_evidence": {
+      "include_uncertainty": true,
+      "include_diversity": true,
+      "include_memory": true,
+      "evidence_mode": "shuffled"
+    }
+  }
+}

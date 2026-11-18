@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 84,
+    "pool_unique_scaffolds": 1009
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 8.641502592252072,
+    "median": 6.652046861172785,
+    "min": 3.34470609140202,
+    "q25": 6.4241315604637705,
+    "q75": 6.917446593346792
+  },
+  "gp_predicted_std": {
+    "max": 1.9493812404445499,
+    "median": 1.8638716451663506,
+    "min": 0.5233329782208996,
+    "q25": 1.6844798940759373,
+    "q75": 1.8916161434052234
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "The batch will add at least 10 previously unobserved scaffolds and contain at least one affinity of 8.4 or higher.",
+      "improvement": 0.0,
+      "n_diverse": 14,
+      "n_exploit": 6,
+      "n_uncertain": 10,
+      "observed_best_after": 9.656197667,
+      "observed_best_before": 9.656197667,
+      "rationale": "The observed best is strong and above the GP pool maximum, so immediate exploitation has limited upside. Broad scaffold coverage and substantial uncertainty favor an exploration-led opening batch.",
+      "selected_indices": [
+        1049,
+        322,
+        2014,
+        292,
+        2018,
+        1000,
+        1,
+        1833,
+        1906,
+        1907,
+        1909,
+        1913,
+        4,
+        1908,
+        1914,
+        1912,
+        1399,
+        1523,
+        1828,
+        2196,
+        1011,
+        2063,
+        2162,
+        57,
+        2119,
+        1020,
+        1128,
+        293,
+        55,
+        404
+      ],
+      "selected_predicted_mean": 7.041602700961163,
+      "selected_predicted_std": 1.428769659276114
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.656197667,
+    "mean": 6.411737164511112,
+    "quantiles": {
+      "max": 9.656197667,
+      "median": 6.7930073244999996,
+      "min": -0.727355079,
+      "q25": 5.59592235325,
+      "q75": 7.763345183
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2412,
+  "remaining_assay_budget": 270,
+  "target": "D2R",
+  "total_cycles": 10
+}

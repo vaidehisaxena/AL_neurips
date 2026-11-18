@@ -1,0 +1,401 @@
+target,policy,model,seed,cycle,expected_outcome,parsed_claims,scored_claims,unavailable_claims,satisfied_claims,fraction_clauses_satisfied,conjunction_success,expectation_scorable,unscorable_reason
+D2R,codex-agent,gpt-5.6-sol,0,1,The batch will add at least 8 previously unobserved scaffolds and contain at least one affinity of 8.5 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,2,The batch will add at least 8 new scaffolds and contain at least one affinity of 8.5 or higher; an incumbent improvement is not required.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,3,The batch will add at least 9 new scaffolds and contain at least one affinity of 8.5 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,4,The batch will add at least 7 new scaffolds and contain at least one affinity of 8.8 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,5,The batch will contain at least two compounds with affinity 9.0 or higher and add at least 5 new scaffolds.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,6,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.7 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,7,The batch will contain at least three compounds with affinity 8.8 or higher and add at least 4 new scaffolds.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,8,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.7 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,9,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.6 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,0,10,The final batch will contain at least four compounds with affinity 9.0 or higher and add at least 3 new scaffolds.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,1,The batch will add at least 10 previously unobserved scaffolds and contain at least one affinity of 8.4 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,2,The batch will add at least 7 new scaffolds and contain at least one affinity of 8.5 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,3,The batch will add at least 8 new scaffolds and contain at least one affinity of 8.8 or higher; improving 10.131 is not expected.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,4,The batch will add at least 8 new scaffolds and contain at least one affinity of 8.5 or higher; a further incumbent improvement is not expected.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,5,The batch will add at least 8 new scaffolds and contain at least one affinity of 8.7 or higher; beating 10.751 is not expected.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,6,The batch will contain at least two compounds with affinity 9.0 or higher and add at least 5 new scaffolds.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,1,7,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.8 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,8,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.7 or higher.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,9,The batch will contain at least three compounds with affinity 8.7 or higher and add at least 5 new scaffolds.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,1,10,The final batch will contain at least three compounds with affinity 8.8 or higher and add at least 3 new scaffolds.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,2,1,"After cycle 1, cumulative mean will be at least 7.20 and observed unique scaffolds will increase by at least 15 from 56.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,2,2,"After cycle 2, cumulative mean will be at least 6.35 and observed unique scaffolds will increase by at least 18 from 79.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,3,"After cycle 3, cumulative mean will be at least 6.55 and observed unique scaffolds will increase by at least 17 from 106.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,4,"After cycle 4, cumulative mean will be at least 6.68 and observed unique scaffolds will increase by at least 14 from 127.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,5,"After cycle 5, cumulative mean will be at least 6.84 and observed unique scaffolds will increase by at least 13 from 149.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,6,"After cycle 6, cumulative mean will be at least 6.93 and observed unique scaffolds will increase by at least 10 from 169.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,7,"After cycle 7, cumulative mean will be at least 6.96 and observed unique scaffolds will increase by at least 8 from 193.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,8,"After cycle 8, cumulative mean will be at least 7.02 and observed unique scaffolds will increase by at least 7 from 211.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,2,9,"After cycle 9, cumulative mean will be at least 6.99 and observed unique scaffolds will increase by at least 7 from 231.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,2,10,"At completion, cumulative mean will be at least 7.04 and the final batch will add at least 2 observed unique scaffolds beyond 246.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,1,"After cycle 1, cumulative mean will be at least 7.33 and observed unique scaffolds will increase by at least 15 from 54.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,3,2,"After cycle 2, cumulative mean will be at least 6.58 and observed unique scaffolds will increase by at least 18 from 78.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,3,"After cycle 3, cumulative mean will be at least 6.55 and observed unique scaffolds will increase by at least 18 from 107.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,3,4,"After cycle 4, cumulative mean will be at least 6.75 and observed unique scaffolds will increase by at least 15 from 124.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,5,"After cycle 5, cumulative mean will be at least 6.84 and observed unique scaffolds will increase by at least 13 from 146.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,6,"After cycle 6, cumulative mean will be at least 6.91 and observed unique scaffolds will increase by at least 11 from 167.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,7,"After cycle 7, cumulative mean will be at least 6.96 and observed unique scaffolds will increase by at least 9 from 188.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,3,8,"After cycle 8, cumulative mean will remain at least 6.92 and observed unique scaffolds will increase by at least 10 from 208.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,9,"After cycle 9, cumulative mean will be at least 6.97 and observed unique scaffolds will increase by at least 6 from 229.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,3,10,"At completion, cumulative mean will be at least 7.06 and the final batch will add at least 2 observed unique scaffolds beyond 244.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,1,"After cycle 1, cumulative mean will remain at least 6.78 and observed unique scaffolds will increase by at least 17 from 56.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,4,2,"After cycle 2, cumulative mean will be at least 6.00 and observed unique scaffolds will increase by at least 18 from 83.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,3,"After cycle 3, cumulative mean will be at least 6.40 and observed unique scaffolds will increase by at least 18 from 105.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,4,"After cycle 4, cumulative mean will be at least 6.52 and observed unique scaffolds will increase by at least 15 from 126.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,5,"After cycle 5, cumulative mean will be at least 6.61 and observed unique scaffolds will increase by at least 14 from 149.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,6,"After cycle 6, cumulative mean will be at least 6.78 and observed unique scaffolds will increase by at least 8 from 169.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,4,7,"After cycle 7, cumulative mean will be at least 6.80 and observed unique scaffolds will increase by at least 9 from 184.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,8,"After cycle 8, cumulative mean will be at least 6.84 and observed unique scaffolds will increase by at least 9 from 203.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,9,"After cycle 9, cumulative mean will be at least 6.91 and observed unique scaffolds will increase by at least 6 from 224.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,4,10,"At completion, cumulative mean will be at least 7.01 and the final batch will add at least 1 observed unique scaffold beyond 241.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,1,"After cycle 1, cumulative mean will remain at least 7.05 and observed unique scaffolds will increase by at least 16 from 54.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,5,2,"After cycle 2, cumulative mean will be at least 6.25 and observed unique scaffolds will increase by at least 18 from 78.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,3,"After cycle 3, cumulative mean will be at least 6.54 and observed unique scaffolds will increase by at least 18 from 104.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,4,"After cycle 4, cumulative mean will be at least 6.68 and observed unique scaffolds will increase by at least 13 from 128.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,5,"After cycle 5, cumulative mean will be at least 6.76 and observed unique scaffolds will increase by at least 12 from 149.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,6,"After cycle 6, cumulative mean will be at least 6.89 and observed unique scaffolds will increase by at least 10 from 166.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,5,7,"After cycle 7, cumulative mean will be at least 6.89 and observed unique scaffolds will increase by at least 9 from 191.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,8,"After cycle 8, cumulative mean will be at least 7.03 and observed unique scaffolds will increase by at least 5 from 209.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,5,9,"After cycle 9, cumulative mean will remain at least 7.00 and observed unique scaffolds will increase by at least 8 from 224.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,5,10,"At completion, cumulative mean will be at least 7.05 and the final batch will add at least 2 observed unique scaffolds beyond 243.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,1,"After cycle 1, cumulative mean will be at least 6.68 and observed unique scaffolds will increase by at least 14 from 57.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,6,2,"After cycle 2, cumulative mean will be at least 6.30 and observed unique scaffolds will increase by at least 17 from 79.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,3,"After cycle 3, cumulative mean will be at least 6.44 and observed unique scaffolds will increase by at least 17 from 104.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,4,"After cycle 4, cumulative mean will be at least 6.60 and observed unique scaffolds will increase by at least 15 from 127.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,5,"After cycle 5, cumulative mean will be at least 6.75 and observed unique scaffolds will increase by at least 14 from 154.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,6,The batch should add at least 14 observed scaffolds and either raise the next GP maximum above 8.09 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,7,The batch should add at least 12 observed scaffolds and either raise the next GP maximum above 8.39 or improve the incumbent.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,6,8,The batch should add at least 14 observed scaffolds and either raise the next GP maximum above 8.28 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,6,9,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the final-cycle GP maximum above 9.25.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,6,10,The final batch should add at least 7 observed scaffolds and either improve the incumbent or include a selected outcome above 9.0.,1,1,0,1,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,1,"After cycle 1, cumulative mean will remain at least 6.63 and observed unique scaffolds will increase by at least 16 from 56.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,7,2,"After cycle 2, cumulative mean will be at least 5.95 and observed unique scaffolds will increase by at least 17 from 78.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,3,"After cycle 3, cumulative mean will be at least 6.23 and observed unique scaffolds will increase by at least 17 from 102.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,4,"After cycle 4, cumulative mean will be at least 6.43 and observed unique scaffolds will increase by at least 15 from 122.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,5,"After cycle 5, cumulative mean will be at least 6.59 and observed unique scaffolds will increase by at least 14 from 148.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,7,6,The batch should add at least 14 observed scaffolds and reduce maximum uncertainty below 1.77 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,7,The batch should add at least 12 observed scaffolds and lower maximum uncertainty below 1.70 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,8,The batch should add at least 12 observed scaffolds and either raise the next GP maximum above 8.41 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,7,9,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the final-cycle GP maximum above 9.20.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,7,10,The final batch should add at least 5 observed scaffolds and either improve the incumbent or include at least two selected outcomes above 9.0.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,8,1,"After cycle 1, cumulative mean will be at least 7.03 and observed unique scaffolds will increase by at least 14 from 56.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,8,2,"After cycle 2, cumulative mean will be at least 6.45 and observed unique scaffolds will increase by at least 17 from 75.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,8,3,"After cycle 3, cumulative mean will be at least 6.59 and observed unique scaffolds will increase by at least 17 from 96.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,8,4,"After cycle 4, cumulative mean will be at least 6.88 and observed unique scaffolds will increase by at least 15 from 121.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,8,5,"After cycle 5, cumulative mean will be at least 6.83 and observed unique scaffolds will increase by at least 13 from 147.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,8,6,The batch should add at least 13 observed scaffolds and either raise the next GP maximum above 8.45 or improve the incumbent.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,8,7,The batch should add at least 14 observed scaffolds and either raise the next GP maximum above 8.31 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,8,8,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.25.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,8,9,The batch should add at least 12 observed scaffolds and either raise the final-cycle GP maximum above 8.95 or improve the incumbent.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,8,10,The final batch should add at least 6 observed scaffolds and either improve the incumbent or include a selected outcome above 9.0.,1,1,0,1,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,9,1,"After cycle 1, cumulative mean will be at least 6.98 and observed unique scaffolds will increase by at least 15 from 54.",2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,9,2,"After cycle 2, cumulative mean will be at least 6.45 and observed unique scaffolds will increase by at least 17 from 78.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,9,3,"After cycle 3, cumulative mean will be at least 6.57 and observed unique scaffolds will increase by at least 17 from 101.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,9,4,"After cycle 4, cumulative mean will be at least 6.68 and observed unique scaffolds will increase by at least 14 from 123.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,9,5,"After cycle 5, cumulative mean will be at least 6.84 and observed unique scaffolds will increase by at least 13 from 144.",2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,9,6,The batch should add at least 13 observed scaffolds and either raise the next GP maximum above 8.55 or improve the incumbent.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,9,7,The batch should add at least 14 observed scaffolds and either raise the next GP maximum above 8.53 or improve the incumbent again.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,9,8,The batch should add at least 14 observed scaffolds and lower maximum uncertainty below 1.70 or improve the incumbent.,2,2,0,2,1.0,True,True,
+D2R,codex-agent,gpt-5.6-sol,9,9,The batch should add at least 14 observed scaffolds and either raise the final-cycle GP maximum above 8.48 or improve the incumbent.,2,2,0,1,0.5,False,True,
+D2R,codex-agent,gpt-5.6-sol,9,10,The final batch should add at least 7 observed scaffolds and either improve the incumbent or include a selected outcome above 9.0.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,1,"The batch will add broad scaffold coverage and has a reasonable chance of improving the 9.881 incumbent, while materially narrowing the upper uncertainty tail next cycle.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,0,2,The batch should add at least 15 observed scaffolds and either improve the 10.003 incumbent or reduce uncertainty after retraining enough to make later exploitation more selective.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,3,Observed scaffold count should rise by at least 18; success is either a new incumbent or a further decline in median GP uncertainty from 1.318.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,4,The batch should add at least 18 scaffolds and lower median GP uncertainty below 1.276; any incumbent gain would be evidence of discovery outside the current high-mean queue.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,5,The exploit queue should yield compounds near the 10.254 incumbent and may improve it; the exploratory 22 should add at least 15 scaffolds while keeping median uncertainty on a downward trend.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,6,The batch should add at least 17 scaffolds and lower median uncertainty below 1.227; an incumbent gain would indicate a productive region missed by mean ranking.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,7,"The six exploit picks should test the recovered mean signal, while the other 24 should add at least 16 scaffolds and keep median uncertainty at or below roughly 1.21.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,8,The eight exploit picks should sample the best current model region; the remaining 22 should add at least 14 scaffolds and preserve a chance of discovering an unmodeled high-affinity pocket.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,0,9,The batch should add at least 17 scaffolds and lower median uncertainty below 1.173; improvement would most likely arise from the exploratory queues.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,0,10,The final batch should test the best remaining predictions while adding roughly 12 or more scaffolds; a new incumbent is plausible from either an uncertainty or diversity candidate.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,1,1,"At least one selected compound should challenge the 9.308 incumbent, and the next state should show a lower GP uncertainty median or a clear high-affinity lead from a new region.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,1,2,The batch should expand observed scaffold coverage by roughly 20 and improve model discrimination; an incumbent gain is possible but not required for this information-focused cycle.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,1,3,"The six exploit candidates should test the recovered high-mean region, while the remaining candidates should add at least 16 scaffolds and reduce or stabilize predictive uncertainty.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,4,Scaffold coverage should increase by at least 18 and median uncertainty should decline below 1.255; the four exploit picks provide a small test of the highest predicted cluster.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,5,"The batch should maintain high predicted quality, add at least 15 scaffolds, and either improve the 10.254 incumbent or produce a clearer separation between high-mean candidates and the pool.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,6,"The cycle should add at least 17 scaffolds and reduce median GP uncertainty below 1.268, creating a better-founded ranking for later batches.",2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,7,The batch should add at least 17 scaffolds and reduce median uncertainty below 1.235; a rise in the next GP maximum would justify more closing-phase exploitation.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,8,The 12 exploit candidates should include compounds approaching the 10.254 incumbent; the other 18 should add at least 11 scaffolds and guard against overconcentration.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,9,"The batch should test the next tier of predicted candidates, add at least 13 scaffolds, and either improve the 10.769 incumbent or confirm that the strongest mean-ranked pocket has been harvested.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,1,10,"The final batch should add at least 15 scaffolds; an incumbent gain, if any, is expected to come primarily from the uncertainty or diversity queues rather than the depleted mean queue.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,2,1,The batch should add broad scaffold coverage and either improve the incumbent or sharpen the upper mean ranking for cycle 2.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,2,2,The batch should add about 18 scaffolds and reduce uncertainty; any further gain is expected from broader search rather than the depleted mean peak.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,2,3,The batch should add at least 15 observed scaffolds; the next summary should either improve the incumbent or move the predicted maximum closer to it.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,2,4,The batch should add at least 14 observed scaffolds and either improve the incumbent or raise the next GP maximum above 9.43.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,2,5,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the next GP maximum within 0.10 of it.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,2,6,The batch should add at least 14 observed scaffolds and raise the next GP maximum above 9.29 or improve the incumbent.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,2,7,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.54 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,2,8,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.65.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,2,9,The batch should add at least 12 observed scaffolds and raise the final-cycle GP maximum above 9.18 or reduce maximum uncertainty below 1.37.,3,3,0,2,0.6666666666666666,False,True,
+Mpro,codex-agent,gpt-5.6-sol,2,10,The final batch should add at least 15 observed scaffolds; any incumbent gain is expected primarily from the uncertainty or diversity queues.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,3,1,The batch should add roughly 20 scaffolds and lower uncertainty or uncover a high-affinity region outside the current mean ranking.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,3,2,The exploit candidates should challenge 10.042 while the exploratory majority adds substantial scaffolds and stabilizes uncertainty.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,3,3,The batch should add at least 16 observed scaffolds and increase the next cycle's mean-ranked ceiling or produce a positive incumbent improvement.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,3,4,The batch should add at least 14 observed scaffolds and either improve the incumbent or raise the next GP maximum above 9.59.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,3,5,The batch should add at least 14 observed scaffolds and raise the next GP maximum above 8.57 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,3,6,The batch should add at least 14 observed scaffolds and raise the next GP maximum above 9.19 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,3,7,The batch should add at least 14 observed scaffolds and raise the next GP maximum above 9.29 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,3,8,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.65.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,3,9,The batch should add at least 12 observed scaffolds and raise the final-cycle GP maximum above 8.92 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,3,10,The final batch should add at least 12 observed scaffolds and either improve the incumbent or add high-ranking outcomes from more than one queue.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,4,1,The batch should materially expand scaffold coverage and has a reasonable chance of improving the weak incumbent from an uncertain or diverse region.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,4,2,"At least one exploit candidate should approach 10.003, while the other 23 add roughly 16 or more scaffolds.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,4,3,The batch should add at least 16 observed scaffolds and either raise the next GP maximum above 9.43 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,4,4,The batch should add at least 14 observed scaffolds and either improve the incumbent or raise the next GP maximum above 9.49.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,4,5,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.06 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,4,6,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.56 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,4,7,The batch should add at least 15 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.28.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,4,8,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.15; an incumbent gain would be additional evidence.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,4,9,The batch should add at least 12 observed scaffolds and raise the final-cycle GP maximum above 8.81 or lower maximum uncertainty below 1.35.,3,3,0,3,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,4,10,The final batch should add at least 12 observed scaffolds; any incumbent gain may come from any of the three queues.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,5,1,The batch should add about 20 scaffolds and reduce uncertainty; an incumbent gain would indicate a new exceptional region.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,5,2,"The batch should add around 20 scaffolds and reduce uncertainty, with an incumbent gain treated as upside rather than the primary expectation.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,5,3,The batch should add at least 17 observed scaffolds; success is a higher next-cycle GP maximum or a positive incumbent improvement.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,5,4,The batch should add at least 15 observed scaffolds and reduce maximum uncertainty below 1.44 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,5,5,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.84 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,5,6,The batch should add at least 14 observed scaffolds and raise the next GP maximum above 9.37 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,5,7,The batch should add at least 14 observed scaffolds and either improve the incumbent or move the next GP maximum within 0.50 of it.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,5,8,The batch should add at least 12 observed scaffolds and either improve the incumbent or raise the next GP maximum above 9.49.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,5,9,The batch should add at least 12 observed scaffolds and raise the final-cycle GP maximum above 8.99 or improve the incumbent.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,5,10,The final batch should add at least 12 observed scaffolds and either improve the incumbent or broaden recovery of high outcomes.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,6,1,At least one candidate should challenge the incumbent and the exploratory portion should add substantial scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,6,2,"The batch should test the new high-mean pocket and add at least 16 scaffolds, with a credible chance of another incumbent gain.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,6,3,The batch should add at least 16 observed scaffolds and either lift the next GP maximum above 9.43 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,6,4,The batch should add at least 14 observed scaffolds and either improve the incumbent or raise the next GP maximum above 9.59.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,6,5,The batch should add at least 14 observed scaffolds and raise the next GP maximum above 9.19 or improve the incumbent.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,6,6,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.57 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,6,7,The batch should add at least 15 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.28.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,6,8,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.65.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,6,9,The batch should add at least 12 observed scaffolds and raise the final-cycle GP maximum above 9.18 or reduce maximum uncertainty below 1.36.,3,3,0,2,0.6666666666666666,False,True,
+Mpro,codex-agent,gpt-5.6-sol,6,10,The final batch should add at least 15 observed scaffolds; any incumbent gain is expected from an uncertainty or diversity selection.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,7,1,The batch should either improve the incumbent modestly or create a better-separated high-mean queue while adding many scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,7,2,The seven exploit candidates should probe the productive region while the exploratory candidates add at least 16 scaffolds.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,7,3,The batch should add at least 15 observed scaffolds and either improve the incumbent or bring the next GP maximum within 0.10 of it.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,7,4,The batch should add at least 13 observed scaffolds and either improve the incumbent or lower maximum uncertainty below 1.45.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,7,5,The batch should add at least 10 observed scaffolds and either improve the incumbent or reduce maximum uncertainty below 1.48.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,7,6,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.56; an incumbent gain would be additional evidence.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,7,7,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 9.28 or lower maximum uncertainty below 1.42.,3,3,0,3,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,7,8,The batch should add at least 12 observed scaffolds and raise the next GP maximum above 9.65 or lower maximum uncertainty below 1.38.,3,3,0,2,0.6666666666666666,False,True,
+Mpro,codex-agent,gpt-5.6-sol,7,9,The batch should add at least 12 observed scaffolds and raise the final-cycle GP maximum above 8.99 or lower maximum uncertainty below 1.35.,3,3,0,2,0.6666666666666666,False,True,
+Mpro,codex-agent,gpt-5.6-sol,7,10,The final batch should add at least 15 observed scaffolds; any incumbent gain is expected primarily from the uncertainty or diversity queues.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,8,1,"The batch should challenge the incumbent and add broad scaffold coverage, with lower uncertainty after retraining.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,8,2,"The batch should challenge the 10.003 incumbent and add at least 16 scaffolds, improving confidence in the recovered signal.",1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,8,3,The batch should add at least 16 observed scaffolds and raise the next GP maximum above 9.59 or deliver positive incumbent improvement.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,8,4,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 9.17 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,8,5,The batch should add at least 11 observed scaffolds and either improve the incumbent or keep the next GP maximum within 0.10 of it.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,8,6,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 9.01 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,8,7,The batch should add at least 15 observed scaffolds and either improve the incumbent or keep the next GP maximum above 9.28.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,8,8,The batch should add at least 15 observed scaffolds and raise the next GP maximum above 8.80; an incumbent gain would be additional evidence.,2,2,0,1,0.5,False,True,
+Mpro,codex-agent,gpt-5.6-sol,8,9,The batch should add at least 13 observed scaffolds and raise the final-cycle GP maximum above 8.42 or reduce maximum uncertainty below 1.35.,3,3,0,3,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,8,10,The final batch should add at least 12 observed scaffolds and either improve the incumbent or recover high outcomes across multiple queues.,1,1,0,1,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,1,"The cycle should expand coverage and reduce the high uncertainty tail, with a credible chance of an incumbent improvement.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,9,2,The batch should add about 20 scaffolds and lower median uncertainty from 1.31; improvement is more likely from off-model exploration.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,9,3,The batch should add at least 16 observed scaffolds and reduce maximum predictive uncertainty below 1.53 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,4,The batch should add at least 14 observed scaffolds and reduce maximum uncertainty below 1.49 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,5,The batch should add at least 10 observed scaffolds and either improve the incumbent or lower maximum uncertainty below 1.48.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,6,The batch should add at least 15 observed scaffolds and lower maximum uncertainty below 1.44 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,7,The batch should add at least 14 observed scaffolds and lower maximum uncertainty below 1.42 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,8,The batch should add at least 14 observed scaffolds and lower maximum uncertainty below 1.40 or improve the incumbent.,2,2,0,2,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,9,The batch should add at least 15 observed scaffolds and raise the final-cycle GP maximum above 7.94 or lower maximum uncertainty below 1.37.,3,3,0,3,1.0,True,True,
+Mpro,codex-agent,gpt-5.6-sol,9,10,The final batch should add at least 12 observed scaffolds and either improve the incumbent or lower the final simple regret while broadening coverage.,1,1,0,1,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,1,The batch will add at least 6 previously unseen scaffolds and achieve a maximum affinity above 9.5.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,2,"The batch mean will exceed 8.0, its maximum will exceed 10.5, and it will add at least 8 new scaffolds.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,3,"The batch mean will exceed 8.2, the maximum will exceed 10.5, and at least 5 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,0,4,"The batch mean will exceed 8.5, its maximum will exceed 10.8, and at least 2 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,0,5,"The batch mean will exceed 8.5, its maximum will exceed 10.5, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,6,"The batch mean will exceed 8.7, its maximum will exceed 11.0, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,7,"The batch mean will exceed 9.0, its maximum will exceed 11.0, and at least 1 new scaffold will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,0,8,The batch mean will exceed 9.0 and its maximum will exceed 11.2; incumbent improvement is not expected unless an uncertainty probe succeeds.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,9,The batch mean will exceed 9.1 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,0,10,The final batch mean will exceed 9.2 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 9.5.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,2,"The batch mean will exceed 8.5, its maximum will exceed 11.0, and at least 5 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,3,"The batch mean will exceed 8.6, its maximum will exceed 10.8, and at least 4 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,4,"The batch mean will exceed 9.0, its maximum will exceed 11.3, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,5,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,6,"The batch mean will exceed 9.2, its maximum will exceed 11.0, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,7,"The batch mean will exceed 9.3, its maximum will exceed 11.1, and at least 1 new scaffold will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,1,8,The batch mean will exceed 9.2 and its maximum will exceed 11.0.,2,2,0,1,0.5,False,True,
+TYK2,codex-agent,gpt-5.6-sol,1,9,The batch mean will exceed 9.0 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,1,10,The final batch mean will exceed 9.3 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 9.8.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,2,"The batch mean will exceed 8.4, its maximum will exceed 10.8, and at least 5 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,3,"The batch mean will exceed 8.5, its maximum will exceed 11.0, and at least 4 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,2,4,"The batch mean will exceed 8.8, its maximum will exceed 11.0, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,5,"The batch mean will exceed 9.2, its maximum will exceed 11.1, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,6,"The batch mean will exceed 9.3, its maximum will exceed 11.1, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,7,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,8,The batch mean will exceed 9.3 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,9,The batch mean will exceed 9.4 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,2,10,The final batch mean will exceed 9.4 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 10.8.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,2,"The batch mean will exceed 8.4, its maximum will exceed 10.8, and at least 5 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,3,3,"The batch mean will exceed 8.6, its maximum will exceed 11.0, and at least 3 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,4,"The batch mean will exceed 9.1, its maximum will exceed 11.2, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,5,"The batch mean will exceed 9.2, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,6,"The batch mean will exceed 9.2, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,7,"The batch mean will exceed 9.3, its maximum will exceed 11.1, and at least 1 new scaffold will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,3,8,The batch mean will exceed 9.3 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,9,The batch mean will exceed 9.3 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,3,10,The final batch mean will exceed 9.4 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 9.7.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,2,"The batch mean will exceed 8.7, its maximum will exceed 11.3, and at least 4 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,3,"The batch mean will exceed 9.1, its maximum will exceed 11.2, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,4,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 2 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,4,5,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,6,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,7,The batch mean will exceed 9.4 and its maximum will exceed 11.1.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,8,"The batch mean will exceed 9.5, its maximum will exceed 11.1, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,4,9,The batch mean will exceed 9.5 and its maximum will exceed 11.0.,2,2,0,1,0.5,False,True,
+TYK2,codex-agent,gpt-5.6-sol,4,10,The final batch mean will exceed 9.6 and its maximum will exceed 10.9.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 10.5.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,2,"The batch mean will exceed 8.4, its maximum will exceed 11.0, and at least 5 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,3,"The batch mean will exceed 8.6, its maximum will exceed 11.2, and at least 4 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,4,"The batch mean will exceed 9.1, its maximum will exceed 11.3, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,5,"The batch mean will exceed 9.3, its maximum will exceed 11.4, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,6,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,7,"The batch mean will exceed 9.4, its maximum will exceed 11.1, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,5,8,The batch mean will exceed 9.4 and its maximum will exceed 11.2.,2,2,0,1,0.5,False,True,
+TYK2,codex-agent,gpt-5.6-sol,5,9,"The batch mean will exceed 9.4, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,1,0.3333333333333333,False,True,
+TYK2,codex-agent,gpt-5.6-sol,5,10,The final batch mean will exceed 9.4 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 9.7.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,2,"The batch mean will exceed 8.5, its maximum will exceed 10.8, and at least 5 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,6,3,"The batch mean will exceed 8.6, its maximum will exceed 11.2, and at least 4 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,4,"The batch mean will exceed 9.1, its maximum will exceed 11.2, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,5,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,6,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,7,"The batch mean will exceed 9.4, its maximum will exceed 11.3, and at least 1 new scaffold will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,6,8,The batch mean will exceed 9.5 and its maximum will exceed 11.2.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,6,9,The batch mean will exceed 9.6 and its maximum will exceed 11.2.,2,2,0,1,0.5,False,True,
+TYK2,codex-agent,gpt-5.6-sol,6,10,The final batch mean will exceed 9.6 and its maximum will exceed 11.0.,2,2,0,1,0.5,False,True,
+TYK2,codex-agent,gpt-5.6-sol,7,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum affinity above 9.8.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,7,2,"The batch mean will exceed 8.5, its maximum will exceed 11.0, and at least 5 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,7,3,"The batch mean will exceed 9.0, its maximum will exceed 11.2, and at least 4 new scaffolds will be added.",3,3,0,1,0.3333333333333333,False,True,
+TYK2,codex-agent,gpt-5.6-sol,7,4,"The batch mean will exceed 8.8, its maximum will exceed 11.2, and at least 3 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,7,5,"The batch mean will exceed 9.0, its maximum will exceed 11.0, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,7,6,"The batch mean will exceed 9.2, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,7,7,"The batch mean will exceed 9.3, its maximum will exceed 11.2, and at least 1 new scaffold will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,7,8,The batch mean will exceed 9.5 and its maximum will exceed 11.4.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,7,9,The batch mean will exceed 9.6 and its maximum will exceed 11.1.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,7,10,The final batch mean will exceed 9.6 and its maximum will exceed 11.0.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,8,1,The batch will add at least 7 previously unseen scaffolds and achieve a maximum observed outcome above 9.7.,2,2,0,2,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,8,2,"The batch mean will exceed 8.2, its maximum will exceed 10.5, and at least 5 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,8,3,"The batch mean will exceed 8.3, its maximum will exceed 11.0, and at least 5 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,8,4,"The batch mean will exceed 8.4, its maximum will exceed 11.2, and at least 4 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,8,5,"The batch mean will exceed 8.7, its maximum will exceed 11.5, and at least 3 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,8,6,"The batch mean will exceed 8.3, its maximum will exceed 11.0, and at least 4 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,8,7,"The batch mean will exceed 8.2, its maximum will exceed 10.8, and at least 4 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,8,8,"The batch mean will exceed 8.3, its maximum will exceed 11.0, and at least 3 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,8,9,"The batch mean will exceed 8.4, its maximum will exceed 11.0, and at least 2 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,8,10,"The final batch mean will exceed 8.8, its maximum will exceed 11.0, and at least 2 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,1,"The batch mean will exceed 8.3, its maximum will exceed 10.3, and at least 7 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,2,"The batch mean will exceed 8.0, its maximum will exceed 10.5, and at least 6 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,3,"The batch mean will exceed 8.2, its maximum will exceed 11.0, and at least 4 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,4,"The batch mean will exceed 8.7, its maximum will exceed 11.3, and at least 3 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,5,"The batch mean will exceed 8.4, its maximum will exceed 11.0, and at least 4 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,6,"The batch mean will exceed 8.3, its maximum will exceed 11.0, and at least 4 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,7,"The batch mean will exceed 8.0, its maximum will exceed 10.8, and at least 4 new scaffolds will be added.",3,3,0,3,1.0,True,True,
+TYK2,codex-agent,gpt-5.6-sol,9,8,"The batch mean will exceed 8.5, its maximum will exceed 11.0, and at least 3 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,9,"The batch mean will exceed 8.8, its maximum will exceed 11.3, and at least 2 new scaffolds will be added.",3,3,0,2,0.6666666666666666,False,True,
+TYK2,codex-agent,gpt-5.6-sol,9,10,"The final batch mean will exceed 8.8, its maximum will exceed 11.0, and at least 1 new scaffold will be added.",3,3,0,1,0.3333333333333333,False,True,
+USP7,codex-agent,gpt-5.6-sol,0,1,The batch will add at least 7 new scaffolds and contain at least one affinity of 8.8 or higher.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,0,2,The batch will add at least 8 new scaffolds and contain at least one affinity of 8.8 or higher; improving 10.194 is not required.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,0,3,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.5 or higher.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,0,4,The batch will add at least 7 new scaffolds and contain at least one affinity of 8.5 or higher.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,0,5,The batch will contain at least three compounds with affinity 8.6 or higher and add at least 5 new scaffolds.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,0,6,The batch will contain at least three compounds with affinity 8.7 or higher and add at least 4 new scaffolds.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,0,7,The batch will contain at least three compounds with affinity 8.6 or higher and add at least 5 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,0,8,The batch will contain at least four compounds with affinity 8.6 or higher and add at least 4 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,0,9,The batch will contain at least five compounds with affinity 8.6 or higher and add at least 3 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,0,10,The final batch will contain at least six compounds with affinity 8.6 or higher and add at least 2 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,1,1,"The batch will improve the incumbent or contain at least three compounds with affinity 8.3 or higher, and add at least 6 new scaffolds.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,1,2,The batch will add at least 8 new scaffolds and contain at least one affinity of 8.8 or higher; a further incumbent improvement is not expected.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,1,3,The batch will add at least 6 new scaffolds and contain at least two compounds with affinity 8.5 or higher.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,1,4,The batch will add at least 7 new scaffolds and contain at least one affinity of 8.5 or higher.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,1,5,The batch will add at least 7 new scaffolds and contain at least one affinity of 8.5 or higher.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,1,6,The batch will contain at least four compounds with affinity 8.8 or higher and add at least 4 new scaffolds.,2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,1,7,The batch will contain at least three compounds with affinity 8.6 or higher and add at least 5 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,1,8,The batch will contain at least four compounds with affinity 8.6 or higher and add at least 4 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,1,9,The batch will contain at least five compounds with affinity 8.6 or higher and add at least 3 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,1,10,The final batch will contain at least six compounds with affinity 8.6 or higher and add at least 2 new scaffolds.,2,2,0,1,0.5,False,True,
+USP7,codex-agent,gpt-5.6-sol,2,1,Improve the incumbent or recover several high-affinity compounds while adding new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,9,"After this batch, the cumulative observed mean will be at least 6.40 and the observed unique-scaffold count will increase by at least 3 from 202.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,2,10,"At completion, the cumulative observed mean will be at least 6.52 and observed unique scaffolds will increase by at least 2 from 219.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,3,1,Expand scaffold coverage and recover at least one competitive high-affinity compound.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,9,"After this batch, the cumulative observed mean will be at least 6.36 and the observed unique-scaffold count will increase by at least 3 from 198.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,3,10,"At completion, the cumulative observed mean will be at least 6.46 and observed unique scaffolds will increase by at least 2 from 214.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,4,1,Improve the incumbent or enrich the observed high-affinity set while adding new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,5,Increase high-affinity recovery while continuing to add structurally distinct compounds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,9,"After this batch, the cumulative observed mean will be at least 6.41 and the observed unique-scaffold count will increase by at least 3 from 208.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,4,10,"At completion, the cumulative observed mean will be at least 6.54 and observed unique scaffolds will increase by at least 1 from 225.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,5,1,Expand structural coverage and recover at least one strong high-affinity compound.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,9,"After this batch, the cumulative observed mean will be at least 6.36 and the observed unique-scaffold count will increase by at least 3 from 198.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,5,10,"At completion, the cumulative observed mean will be at least 6.48 and observed unique scaffolds will increase by at least 2 from 214.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,6,1,Test the current ranking while materially expanding uncertain and diverse coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,6,Harvest multiple high-affinity compounds and maintain some structural expansion.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,9,"After this batch, the cumulative observed mean will be at least 6.39 and the observed unique-scaffold count will increase by at least 2 from 202.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,6,10,"At completion, the cumulative observed mean will be at least 6.51 and observed unique scaffolds will increase by at least 1 from 218.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,7,1,Add new scaffolds and find at least one competitive affinity from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,9,"After this batch, the cumulative observed mean will be at least 6.38 and the observed unique-scaffold count will increase by at least 2 from 192.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,7,10,"At completion, the cumulative observed mean will be at least 6.49 and observed unique scaffolds will increase by at least 2 from 206.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,8,1,Improve high-affinity recovery and broaden scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,8,"After this batch, the cumulative observed mean will be at least 6.40 and observed unique scaffolds will increase by at least 4 from 182.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,8,9,"After this batch, the cumulative observed mean will be at least 6.47 and observed unique scaffolds will increase by at least 3 from 203.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,8,10,"At completion, the cumulative observed mean will be at least 6.55 and observed unique scaffolds will increase by at least 2 from 223.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,9,1,"Reduce uncertainty, add new scaffolds, and recover at least one strong compound.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,5,Increase high-affinity recovery while continuing to add structurally distinct compounds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,8,"After this batch, the cumulative observed mean will be at least 6.31 and observed unique scaffolds will increase by at least 3 from 192.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,9,9,"After this batch, the cumulative observed mean will be at least 6.42 and observed unique scaffolds will increase by at least 2 from 208.",2,2,0,2,1.0,True,True,
+USP7,codex-agent,gpt-5.6-sol,9,10,"At completion, the cumulative observed mean will be at least 6.47 and observed unique scaffolds will increase by at least 1 from 226.",2,2,0,2,1.0,True,True,

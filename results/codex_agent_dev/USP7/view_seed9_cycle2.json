@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 77,
+    "pool_unique_scaffolds": 712
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 8.699934550997064,
+    "median": 6.946240841632916,
+    "min": 4.445640862288681,
+    "q25": 5.735116471630752,
+    "q75": 7.299208690518864
+  },
+  "gp_predicted_std": {
+    "max": 1.5170689041696102,
+    "median": 1.090951530750974,
+    "min": 0.4456052769689016,
+    "q25": 0.9873678631376095,
+    "q75": 1.2516020454330763
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "Reduce uncertainty, add new scaffolds, and recover at least one strong compound.",
+      "improvement": 0.38694462399999985,
+      "n_diverse": 10,
+      "n_exploit": 8,
+      "n_uncertain": 12,
+      "observed_best_after": 9.795880017,
+      "observed_best_before": 9.408935393,
+      "rationale": "The incumbent is substantially above the GP maximum and uncertainty is highest among the expansion seeds, so emphasize exploration.",
+      "selected_indices": [
+        1,
+        36,
+        10,
+        104,
+        136,
+        135,
+        71,
+        216,
+        1414,
+        1413,
+        1247,
+        1254,
+        1199,
+        1295,
+        1510,
+        1478,
+        1024,
+        1797,
+        1770,
+        1336,
+        1381,
+        1393,
+        1320,
+        1573,
+        1359,
+        1596,
+        1449,
+        16,
+        1542,
+        1522
+      ],
+      "selected_predicted_mean": 6.496996132355021,
+      "selected_predicted_std": 1.3045004725560392
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.795880017,
+    "mean": 6.2041827210000005,
+    "quantiles": {
+      "max": 9.795880017,
+      "median": 6.0624693685,
+      "min": 3.326979093,
+      "q25": 4.83947493275,
+      "q75": 7.475097534
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 1709,
+  "remaining_assay_budget": 270,
+  "target": "USP7",
+  "total_cycles": 10
+}

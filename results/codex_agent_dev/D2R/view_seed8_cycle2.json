@@ -1,0 +1,86 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 75,
+    "pool_unique_scaffolds": 1015
+  },
+  "cycle": 2,
+  "gp_predicted_mean": {
+    "max": 8.351588585570516,
+    "median": 6.8876912157512304,
+    "min": 5.2799592177421415,
+    "q25": 6.716151266915076,
+    "q75": 7.032035136807826
+  },
+  "gp_predicted_std": {
+    "max": 1.681178419544414,
+    "median": 1.6094119662422517,
+    "min": 0.10459505713229476,
+    "q25": 1.4739534297552408,
+    "q75": 1.6367060361113421
+  },
+  "history": [
+    {
+      "cycle": 1,
+      "expected_outcome": "After cycle 1, cumulative mean will be at least 7.03 and observed unique scaffolds will increase by at least 14 from 56.",
+      "improvement": 0.0,
+      "n_diverse": 8,
+      "n_exploit": 13,
+      "n_uncertain": 9,
+      "observed_best_after": 9.341706676,
+      "observed_best_before": 9.341706676,
+      "rationale": "The predicted maximum nearly matches the incumbent and uncertainty is comparatively tight, supporting an exploitation plurality with substantial coverage.",
+      "selected_indices": [
+        2215,
+        1542,
+        1543,
+        2212,
+        2214,
+        1540,
+        2174,
+        2175,
+        2172,
+        2171,
+        1782,
+        1494,
+        1500,
+        1,
+        1833,
+        1906,
+        1907,
+        1913,
+        1909,
+        4,
+        1908,
+        6,
+        1922,
+        1553,
+        1014,
+        2494,
+        386,
+        1399,
+        1828,
+        93
+      ],
+      "selected_predicted_mean": 7.670776004235917,
+      "selected_predicted_std": 0.840825854473446
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 9.341706676,
+    "mean": 6.753083353911111,
+    "quantiles": {
+      "max": 9.341706676,
+      "median": 7.0315421595,
+      "min": 2.036212173,
+      "q25": 5.957483808,
+      "q75": 7.81690156
+    }
+  },
+  "observed_count": 90,
+  "pool_count": 2412,
+  "remaining_assay_budget": 270,
+  "target": "D2R",
+  "total_cycles": 10
+}

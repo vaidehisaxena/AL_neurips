@@ -1,0 +1,80 @@
+target,policy,model,seed,cycle,expected_outcome,parsed_claims,scored_claims,unavailable_claims,satisfied_claims,fraction_clauses_satisfied,conjunction_success,expectation_scorable,unscorable_reason
+Mpro,codex-agent,gpt-5.6-sol,0,1,"The batch will add broad scaffold coverage and has a reasonable chance of improving the 9.881 incumbent, while materially narrowing the upper uncertainty tail next cycle.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,0,10,The final batch should test the best remaining predictions while adding roughly 12 or more scaffolds; a new incumbent is plausible from either an uncertainty or diversity candidate.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,1,1,"At least one selected compound should challenge the 9.308 incumbent, and the next state should show a lower GP uncertainty median or a clear high-affinity lead from a new region.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,1,2,The batch should expand observed scaffold coverage by roughly 20 and improve model discrimination; an incumbent gain is possible but not required for this information-focused cycle.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,2,1,The batch should add broad scaffold coverage and either improve the incumbent or sharpen the upper mean ranking for cycle 2.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,2,2,The batch should add about 18 scaffolds and reduce uncertainty; any further gain is expected from broader search rather than the depleted mean peak.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,3,1,The batch should add roughly 20 scaffolds and lower uncertainty or uncover a high-affinity region outside the current mean ranking.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,3,2,The exploit candidates should challenge 10.042 while the exploratory majority adds substantial scaffolds and stabilizes uncertainty.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,4,1,The batch should materially expand scaffold coverage and has a reasonable chance of improving the weak incumbent from an uncertain or diverse region.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,4,2,"At least one exploit candidate should approach 10.003, while the other 23 add roughly 16 or more scaffolds.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,5,1,The batch should add about 20 scaffolds and reduce uncertainty; an incumbent gain would indicate a new exceptional region.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,5,2,"The batch should add around 20 scaffolds and reduce uncertainty, with an incumbent gain treated as upside rather than the primary expectation.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,6,1,At least one candidate should challenge the incumbent and the exploratory portion should add substantial scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,7,1,The batch should either improve the incumbent modestly or create a better-separated high-mean queue while adding many scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,8,1,"The batch should challenge the incumbent and add broad scaffold coverage, with lower uncertainty after retraining.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,9,1,"The cycle should expand coverage and reduce the high uncertainty tail, with a credible chance of an incumbent improvement.",0,0,0,0,,,False,no supported explicit threshold clause
+Mpro,codex-agent,gpt-5.6-sol,9,2,The batch should add about 20 scaffolds and lower median uncertainty from 1.31; improvement is more likely from off-model exploration.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,1,Improve the incumbent or recover several high-affinity compounds while adding new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,2,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,1,Expand scaffold coverage and recover at least one competitive high-affinity compound.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,3,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,1,Improve the incumbent or enrich the observed high-affinity set while adding new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,5,Increase high-affinity recovery while continuing to add structurally distinct compounds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,4,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,1,Expand structural coverage and recover at least one strong high-affinity compound.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,5,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,1,Test the current ranking while materially expanding uncertain and diverse coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,6,Harvest multiple high-affinity compounds and maintain some structural expansion.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,6,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,1,Add new scaffolds and find at least one competitive affinity from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,7,8,Increase active recovery and add a smaller number of new scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,1,Improve high-affinity recovery and broaden scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,5,Expand scaffold coverage and recover competitive high-affinity compounds from outside the current peak.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,8,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,1,"Reduce uncertainty, add new scaffolds, and recover at least one strong compound.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,2,Expand scaffold coverage and recover additional high-affinity compounds without requiring an incumbent improvement.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,3,Enrich high-affinity recovery while continuing to add distinct scaffolds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,4,"Reduce uncertainty and expand structural coverage, with at least one competitive high-affinity recovery.",0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,5,Increase high-affinity recovery while continuing to add structurally distinct compounds.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,6,Raise high-affinity recovery while preserving uncertainty and scaffold coverage.,0,0,0,0,,,False,no supported explicit threshold clause
+USP7,codex-agent,gpt-5.6-sol,9,7,Enrich the high-affinity set while continuing scaffold discovery.,0,0,0,0,,,False,no supported explicit threshold clause

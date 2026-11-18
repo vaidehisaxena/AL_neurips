@@ -1,0 +1,190 @@
+{
+  "batch_size": 30,
+  "chemical_space": {
+    "observed_unique_scaffolds": 126,
+    "pool_unique_scaffolds": 995
+  },
+  "cycle": 4,
+  "explanatory_evidence": {
+    "eligible_bit_count": 1282,
+    "evidence_sha256": "cdff9b1539cdaaf78a44d2c2fd9666cd5cca180317cebf082fb9c60c5b39b04d",
+    "features": [
+      {
+        "affinity_difference": -3.297380313217687,
+        "bit_index": 229,
+        "prevalence": 0.02,
+        "rank": 1,
+        "score": 1.711113822205561,
+        "sign": -1,
+        "standardized_enrichment": -1.711113822205561,
+        "support": 3
+      },
+      {
+        "affinity_difference": 3.222254598680996,
+        "bit_index": 1380,
+        "prevalence": 0.8733333333333333,
+        "rank": 2,
+        "score": 1.6721287381885588,
+        "sign": 1,
+        "standardized_enrichment": 1.6721287381885588,
+        "support": 131
+      },
+      {
+        "affinity_difference": -3.0289532502925174,
+        "bit_index": 867,
+        "prevalence": 0.02,
+        "rank": 3,
+        "score": 1.5718186199554176,
+        "sign": -1,
+        "standardized_enrichment": -1.5718186199554176,
+        "support": 3
+      },
+      {
+        "affinity_difference": -3.0265183809047627,
+        "bit_index": 2797,
+        "prevalence": 0.02,
+        "rank": 4,
+        "score": 1.5705550900410938,
+        "sign": -1,
+        "standardized_enrichment": -1.5705550900410938,
+        "support": 3
+      },
+      {
+        "affinity_difference": -2.9292015564149656,
+        "bit_index": 371,
+        "prevalence": 0.02,
+        "rank": 5,
+        "score": 1.520054344691781,
+        "sign": -1,
+        "standardized_enrichment": -1.520054344691781,
+        "support": 3
+      },
+      {
+        "affinity_difference": 2.7999620302551724,
+        "bit_index": 2166,
+        "prevalence": 0.03333333333333333,
+        "rank": 6,
+        "score": 1.4529879105589463,
+        "sign": 1,
+        "standardized_enrichment": 1.4529879105589463,
+        "support": 5
+      },
+      {
+        "affinity_difference": 2.7819726353586205,
+        "bit_index": 1498,
+        "prevalence": 0.03333333333333333,
+        "rank": 7,
+        "score": 1.4436526506445186,
+        "sign": 1,
+        "standardized_enrichment": 1.4436526506445186,
+        "support": 5
+      },
+      {
+        "affinity_difference": 2.7706432315347387,
+        "bit_index": 3921,
+        "prevalence": 0.8266666666666667,
+        "rank": 8,
+        "score": 1.4377734684941663,
+        "sign": 1,
+        "standardized_enrichment": 1.4377734684941663,
+        "support": 124
+      },
+      {
+        "affinity_difference": -2.7196875468698636,
+        "bit_index": 1646,
+        "prevalence": 0.02666666666666667,
+        "rank": 9,
+        "score": 1.4113309692772857,
+        "sign": -1,
+        "standardized_enrichment": -1.4113309692772857,
+        "support": 4
+      },
+      {
+        "affinity_difference": -2.6572627483253433,
+        "bit_index": 1415,
+        "prevalence": 0.02666666666666667,
+        "rank": 10,
+        "score": 1.3789367879904777,
+        "sign": -1,
+        "standardized_enrichment": -1.3789367879904777,
+        "support": 4
+      }
+    ],
+    "method": "observed-fingerprint-enrichment-v1",
+    "observed_count": 150
+  },
+  "gp_predicted_mean": {
+    "max": 8.697994865542432,
+    "median": 6.937655331764553,
+    "min": 4.056282385220578,
+    "q25": 6.632868768071598,
+    "q75": 7.24382440968869
+  },
+  "history": [
+    {
+      "batch_affinity_max": 9.522878745,
+      "batch_affinity_mean": 5.644025981166667,
+      "cycle": 1,
+      "expected_outcome": "The batch will have a mean affinity of at least 7.4 and add at least 9 new scaffolds.",
+      "improvement": 0.0,
+      "incumbent_improved": false,
+      "n_diverse": 16,
+      "n_exploit": 7,
+      "n_uncertain": 7,
+      "observed_best_after": 10.60032628,
+      "observed_best_before": 10.60032628,
+      "rationale": "In the early campaign, the incumbent-to-GP-maximum gap is 1.07, 56 scaffolds have been observed. This supports a mixed batch with an exploration majority while preserving the available hedge channels.",
+      "selected_new_scaffolds": 24,
+      "selected_predicted_mean": 7.617727544527468
+    },
+    {
+      "batch_affinity_max": 9.698970004,
+      "batch_affinity_mean": 7.103449432666667,
+      "cycle": 2,
+      "expected_outcome": "The batch will have a mean affinity of at least 6.8 and add at least 9 new scaffolds.",
+      "improvement": 0.0,
+      "incumbent_improved": false,
+      "n_diverse": 15,
+      "n_exploit": 9,
+      "n_uncertain": 6,
+      "observed_best_after": 10.60032628,
+      "observed_best_before": 10.60032628,
+      "rationale": "In the early campaign, the incumbent-to-GP-maximum gap is 2.04, 80 scaffolds have been observed, the last batch mean was 5.64. This supports a mixed batch with an exploration majority while preserving the available hedge channels.",
+      "selected_new_scaffolds": 25,
+      "selected_predicted_mean": 7.247142155194138
+    },
+    {
+      "batch_affinity_max": 9.823908741,
+      "batch_affinity_mean": 7.164493596333333,
+      "cycle": 3,
+      "expected_outcome": "The batch will have a mean affinity of at least 6.9 and add at least 7 new scaffolds.",
+      "improvement": 0.0,
+      "incumbent_improved": false,
+      "n_diverse": 13,
+      "n_exploit": 12,
+      "n_uncertain": 5,
+      "observed_best_after": 10.60032628,
+      "observed_best_before": 10.60032628,
+      "rationale": "In the early campaign, the incumbent-to-GP-maximum gap is 1.32, 105 scaffolds have been observed, the last batch mean was 7.10. This supports a mixed batch with an exploration majority while preserving the available hedge channels.",
+      "selected_new_scaffolds": 21,
+      "selected_predicted_mean": 7.845033554327807
+    }
+  ],
+  "instruction": "Choose non-negative integer n_exploit, n_uncertain, n_diverse summing to 30, plus a rationale and falsifiable expected_outcome.",
+  "observed_affinity": {
+    "best": 10.60032628,
+    "mean": 6.88297299762,
+    "quantiles": {
+      "max": 10.60032628,
+      "median": 7.025111502,
+      "min": -0.745699759,
+      "q25": 5.9993963745,
+      "q75": 8.25295756125
+    }
+  },
+  "observed_count": 150,
+  "pool_count": 2352,
+  "remaining_assay_budget": 210,
+  "target": "D2R",
+  "total_cycles": 10
+}

@@ -143,8 +143,7 @@ cython_debug/
 # Claude Code workspace
 .claude/
 
-# Experiment results and outputs
-results/
+# Experiment results and outputs are versioned for reproducibility.
 /artifacts/
 *.log
 *.tmp
@@ -152,3 +151,7 @@ results/
 
 # Temporary files
 nul
+tmp/
+node_modules/
+node_modules
+.DS_Store

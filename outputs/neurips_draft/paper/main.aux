@@ -1,0 +1,74 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\citation{warmuth2001active}
+\citation{jiang2018batch}
+\citation{srinivas2010gpucb}
+\citation{srivastava2026explainable}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{warmuth2001active}
+\citation{jiang2018batch}
+\citation{srinivas2010gpucb}
+\citation{rogers2010ecfp}
+\citation{ralaivola2005kernels}
+\citation{srivastava2026explainable}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces End-to-end experimental workflow. All methods begin from matched initial observations. A GP summarizes the revealed data; the language-model controller allocates each batch across exploitation, uncertainty, and diversity queues; deterministic selection enforces uniqueness and access constraints; and the virtual assay reveals only the selected labels. Ten cycles produce a 360-compound endpoint. The complete decision log supports the core benchmark, next-batch forecast scoring, information ablations, and the operational availability experiment.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:workflow}{{1}{2}{End-to-end experimental workflow. All methods begin from matched initial observations. A GP summarizes the revealed data; the language-model controller allocates each batch across exploitation, uncertainty, and diversity queues; deterministic selection enforces uniqueness and access constraints; and the virtual assay reveals only the selected labels. Ten cycles produce a 360-compound endpoint. The complete decision log supports the core benchmark, next-batch forecast scoring, information ablations, and the operational availability experiment.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related work}{2}{section.2}\protected@file@percent }
+\citation{rogers2010ecfp}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Datasets and representation}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Campaign protocol}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Controller information and outputs}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Baselines and evaluation}{3}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Forecast scoring, ablations, and availability}{3}{subsection.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Endpoint top-2\% recall after 360 measurements. Bars show means over ten paired seeds. The strongest fixed policy is selected separately for each target. The controller is uniformly better than random but not uniformly better than the target-specific leader.\relax }}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:endpoint}{{2}{4}{Endpoint top-2\% recall after 360 measurements. Bars show means over ten paired seeds. The strongest fixed policy is selected separately for each target. The controller is uniformly better than random but not uniformly better than the target-specific leader.\relax }{figure.caption.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Core endpoint comparison. Values are mean top-2\% recall; intervals describe the paired agent-minus-strongest-fixed difference.\relax }}{4}{table.caption.4}\protected@file@percent }
+\newlabel{tab:core}{{1}{4}{Core endpoint comparison. Values are mean top-2\% recall; intervals describe the paired agent-minus-strongest-fixed difference.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The controller consistently beats random but not every target-specific fixed policy}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Top-2\% recall over the assay budget. Lines are means over ten seeds and bands are approximate 95\% confidence intervals based on the standard error.\relax }}{5}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:learning}{{3}{5}{Top-2\% recall over the assay budget. Lines are means over ten seeds and bands are approximate 95\% confidence intervals based on the standard error.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Allocations adapt across targets and campaign stages}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Expected outcomes are often correct when testable}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Information ablations have small endpoint effects}{5}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Agent minus fixed-policy mean top-2\% recall. Positive values favor the controller. The average column is unweighted across targets and should be interpreted together with target-specific cells.\relax }}{6}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:heatmap}{{4}{6}{Agent minus fixed-policy mean top-2\% recall. Positive values favor the controller. The average column is unweighted across targets and should be interpreted together with target-specific cells.\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Availability constraints lower attainable recall}{6}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Endpoint sensitivity across recall thresholds}{6}{subsection.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Mean endpoint top-2\% recall for the full-information rerun and four paired ablations. Differences are small and target-specific. Full-reference reruns are compared only with their paired ablation arms.\relax }}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:ablation}{{5}{7}{Mean endpoint top-2\% recall for the full-information rerun and four paired ablations. Differences are small and target-specific. Full-reference reruns are compared only with their paired ablation arms.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Mean endpoint top-2\% recall for the unconstrained agent, the 80\%-availability agent, and the strongest constrained fixed policy. Each bar averages ten paired seeds.\relax }}{7}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:availability}{{6}{7}{Mean endpoint top-2\% recall for the unconstrained agent, the 80\%-availability agent, and the strongest constrained fixed policy. Each bar averages ten paired seeds.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{7}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Agent endpoint recall at the top-1\%, top-2\%, and top-5\% thresholds. Error bars show standard deviation over ten seeds.\relax }}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:recall-levels}{{7}{8}{Agent endpoint recall at the top-1\%, top-2\%, and top-5\% thresholds. Error bars show standard deviation over ten seeds.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{8}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{8}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Reproducibility and validation}{8}{section.7}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{jiang2018batch}{{1}{2018}{{Jiang et~al.}}{{Jiang, Malkomes, Abbott, Moseley, and Garnett}}}
+\bibcite{ralaivola2005kernels}{{2}{2005}{{Ralaivola et~al.}}{{Ralaivola, Swamidass, Saigo, and Baldi}}}
+\bibcite{rogers2010ecfp}{{3}{2010}{{Rogers and Hahn}}{{}}}
+\bibcite{srinivas2010gpucb}{{4}{2010}{{Srinivas et~al.}}{{Srinivas, Krause, Kakade, and Seeger}}}
+\bibcite{srivastava2026explainable}{{5}{2026}{{Srivastava et~al.}}{{Srivastava, Gorantla, Chundru, Winkelman, Mey, and Singh}}}
+\bibcite{warmuth2001active}{{6}{2001}{{Warmuth et~al.}}{{Warmuth, R\"atsch, Mathieson, Liao, and Lemmen}}}
+\gdef \@abspage@last{9}

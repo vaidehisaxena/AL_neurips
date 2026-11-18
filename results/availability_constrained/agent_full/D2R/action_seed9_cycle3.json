@@ -1,0 +1,7 @@
+{
+  "expected_outcome": "The batch mean affinity will exceed 7.05 and at least 12 selections will add previously unobserved scaffolds.",
+  "n_diverse": 7,
+  "n_exploit": 10,
+  "n_uncertain": 13,
+  "rationale": "Cycle 2 returned mean 7.181, maximum 10.600, and 21 new scaffolds; the incumbent improved at 10.600. Because realized mean lagged the selected predicted mean, I shift capacity toward uncertainty for recalibration while retaining 7 diversity slots across 838 remaining pool scaffolds."
+}

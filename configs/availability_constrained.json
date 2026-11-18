@@ -1,0 +1,27 @@
+{
+  "protocol": "availability-constrained-v1",
+  "availability_fraction": 0.8,
+  "availability_salt": "agentic-al-availability-v1",
+  "mask_input": "RDKit canonical isomeric SMILES",
+  "mask_algorithm": "SHA-256 of salt, NUL, and canonical SMILES; first unsigned 64 bits compared with fraction times 2^64",
+  "mask_scope": "one target-level base mask shared by all policies and seeds",
+  "initial_set_policy": "original paired 60-compound initialization is grandfathered",
+  "runner": "scripts/run_agentic_baselines.py",
+  "targets": ["D2R", "Mpro", "TYK2", "USP7"],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "initial_size": 60,
+  "cycles": 10,
+  "batch_size": 30,
+  "total_measured": 360,
+  "policies": [
+    "random",
+    "explore",
+    "heuristic",
+    "sandwich",
+    "exploit",
+    "balanced",
+    "explore-heavy",
+    "exploit-heavy",
+    "alternating"
+  ]
+}
